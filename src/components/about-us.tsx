@@ -10,10 +10,10 @@ const AboutUs = () => {
           </h2>
         </div>
         <div className="flex items-center mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
-          <div className="sm:w-1/2 sm:h-96 h-80 w-80 sm:mr-10 inline-flex items-center justify-center rounded-lg shrink-0">
+          <div className="sm:w-1/2 sm:h-96 h-80 w-80 sm:mr-10 inline-flex items-center justify-center shrink-0">
             <img
               alt="content"
-              className="object-cover object-top h-full w-full"
+              className="object-cover object-top h-full w-full rounded-lg"
               src="/images/IMG_Mision.jpg"
             />
           </div>
@@ -49,19 +49,19 @@ const AboutUs = () => {
               comunidad en general.
             </p>
           </div>
-          <div className="sm:w-1/2 sm:h-96 h-80 w-80 order-first sm:order-none sm:ml-10 inline-flex items-center justify-center rounded-lg shrink-0">
+          <div className="sm:w-1/2 sm:h-96 h-80 w-80 order-first sm:order-none sm:ml-10 inline-flex items-center justify-center shrink-0">
             <img
               alt="content"
-              className="object-cover object-top h-full w-full"
+              className="object-cover object-top h-full w-full rounded-lg"
               src="/images/IMG_Vision.jpg"
             />
           </div>
         </div>
         <div className="flex items-center mx-auto sm:flex-row flex-col">
-          <div className="sm:w-1/2 sm:h-96 h-80 w-80 sm:mr-10 inline-flex items-center justify-center rounded-lg shrink-0">
+          <div className="sm:w-1/2 sm:h-96 h-80 w-80 sm:mr-10 inline-flex items-center justify-center shrink-0">
             <img
               alt="content"
-              className="object-cover object-top h-full w-full"
+              className="object-cover object-top h-full w-full rounded-lg"
               src="/images/IMG_Historia.jpg"
             />
           </div>

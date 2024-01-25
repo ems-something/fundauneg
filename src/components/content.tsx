@@ -11,11 +11,11 @@ const Content = () => {
         </div>
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
           <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div className="rounded-lg h-64 overflow-hidden">
+            <div className="rounded-lg h-64 overflow-hidden hover:animate-grow">
               <img
                 alt="content"
                 className="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/1203x503"
+                src="/images/asistente_administrativo.jpg"
               />
             </div>
             <h2 className="text-xl font-medium title-font text-white mt-5">
@@ -45,8 +45,8 @@ const Content = () => {
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 alt="content"
-                className="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/1204x504"
+                className="object-cover object-center h-full w-full hover:animate-grow"
+                src="/images/desarrollo_de_videojuegos.jpg"
               />
             </div>
             <h2 className="text-xl font-medium title-font text-white mt-5">
@@ -76,8 +76,8 @@ const Content = () => {
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 alt="content"
-                className="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/1205x505"
+                className="object-cover object-center h-full w-full hover:animate-grow"
+                src="/images/curso_de_maquillaje.jpg"
               />
             </div>
             <h2 className="text-xl font-medium title-font text-white mt-5">
@@ -107,8 +107,8 @@ const Content = () => {
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 alt="content"
-                className="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/1205x505"
+                className="object-cover object-center h-full w-full hover:animate-grow"
+                src="/images/matematicas_preuniversitarias.jpg"
               />
             </div>
             <h2 className="text-xl font-medium title-font text-white mt-5">
