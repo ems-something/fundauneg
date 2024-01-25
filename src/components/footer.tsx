@@ -24,7 +24,11 @@ const Footer = () => {
           </a>
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a className="text-gray-400">
+          <a
+            className="text-gray-400"
+            target="_blank"
+            href="https://www.facebook.com/Fundauneg/"
+          >
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -36,19 +40,28 @@ const Footer = () => {
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
           </a>
-          <a className="ml-3 text-gray-400">
+          <a
+            className="ml-3 text-gray-400"
+            target="_blank"
+            href="https://twitter.com/fundauneg1"
+          >
             <svg
-              fill="currentColor"
+              fill="none"
+              stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               className="w-5 h-5"
               viewBox="0 0 24 24"
             >
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              <path d="M2.86719,3l6.86914,9.81836l-7.00195,8.18164h2.64648l5.53906,-6.49023l4.54102,6.49023h5.91016l-7.19727,-10.30273l6.57031,-7.69727h-2.60547l-5.14258,6.00977l-4.19727,-6.00977z"></path>
             </svg>
           </a>
-          <a className="ml-3 text-gray-400">
+          <a
+            className="ml-3 text-gray-400"
+            target="_blank"
+            href="https://www.instagram.com/fundauneg/"
+          >
             <svg
               fill="none"
               stroke="currentColor"

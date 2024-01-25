@@ -1,7 +1,7 @@
 import HeroSection from "@/components/hero-section";
 import Search from "@/components/search";
 import Content from "@/components/content";
-import Feature from "@/components/feature";
+import AboutUs from "@/components/about-us";
 import Contact from "@/components/contact";
 import Testimonial from "@/components/testimonial";
 
@@ -11,7 +11,7 @@ export default function Home() {
       <HeroSection />
       <Search />
       <Content />
-      <Feature />
+      <AboutUs />
       <Testimonial />
       <Contact />
     </main>

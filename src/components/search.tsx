@@ -18,13 +18,13 @@ const Search = () => {
 
   return (
     <section className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 pt-24 sm:py-24 mx-auto">
         <div className="flex flex-col items-center justify-between">
           <div className="text-sm body-font">
-            <h2 className={"text-white text-center text-3xl my-10"}>
+            <h2 className="text-white text-center text-3xl mb-10">
               Oferta Académica Actual
             </h2>
-            <p className="leading-relaxed text-base text-left mb-10">
+            <p className="leading-relaxed text-base sm:text-justify text-center mb-10">
               En Postgrado FUNDAUNEG ofrecemos programas que responden a los
               retos y necesidades de la sociedad, en las áreas de Ciencias
               Sociales, Económicas, Derecho, Humanidades, Educación e

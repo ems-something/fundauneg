@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full h-20 fixed top-0 z-50 transition-shadow ${
+      className={`w-full sm:h-20 h-32 fixed top-0 z-50 transition-shadow ${
         scrollPosition > 0
           ? "shadow bg-opacity-70 backdrop-blur-lg backdrop-filter"
           : "shadow-none"
