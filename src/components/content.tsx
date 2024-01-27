@@ -11,7 +11,7 @@ const Content = () => {
         </div>
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
           <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div className="rounded-lg h-64 overflow-hidden hover:scale-110 hover:brightness-110">
+            <div className="rounded-lg h-64 overflow-hidden hover:scale-110 hover:brightness-125">
               <img
                 alt="content"
                 className="object-cover object-center h-full w-full"
@@ -42,7 +42,7 @@ const Content = () => {
             </a>
           </div>
           <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div className="rounded-lg h-64 overflow-hidden hover:scale-110 hover:brightness-110">
+            <div className="rounded-lg h-64 overflow-hidden hover:scale-110 hover:brightness-125">
               <img
                 alt="content"
                 className="object-cover object-center h-full w-full"
@@ -73,7 +73,7 @@ const Content = () => {
             </a>
           </div>
           <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div className="rounded-lg h-64 overflow-hidden hover:scale-110 hover:brightness-110">
+            <div className="rounded-lg h-64 overflow-hidden hover:scale-110 hover:brightness-125">
               <img
                 alt="content"
                 className="object-cover object-center h-full w-full"
@@ -104,7 +104,7 @@ const Content = () => {
             </a>
           </div>
           <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div className="rounded-lg h-64 overflow-hidden hover:scale-110 hover:brightness-110">
+            <div className="rounded-lg h-64 overflow-hidden hover:scale-110 hover:brightness-125">
               <img
                 alt="content"
                 className="object-cover object-center h-full w-full"
@@ -135,7 +135,7 @@ const Content = () => {
             </a>
           </div>
           <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div className="rounded-lg h-64 overflow-hidden hover:scale-110 hover:brightness-110">
+            <div className="rounded-lg h-64 overflow-hidden hover:scale-110 hover:brightness-125">
               <img
                 alt="content"
                 className="object-cover object-center h-full w-full"
