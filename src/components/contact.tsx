@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "./form";
 
 function Contact() {
   return (
@@ -48,87 +49,7 @@ function Contact() {
               Post-ironic portland shabby chic echo park, banjo fashion axe
             </p>
           </div>
-          <div className="flex flex-wrap">
-            <div className="relative pr-2 mb-4 w-1/2">
-              <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-                Nombre
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Nombre"
-                className="w-full bg-gray-800 rounded border border-gray-700 focus:border-primary focus:ring-2 focus:ring-secondary text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className="relative mb-4 w-1/2">
-              <label
-                htmlFor="lastname"
-                className="leading-7 text-sm text-gray-400"
-              >
-                Apellido
-              </label>
-              <input
-                type="text"
-                id="lastname"
-                name="lastname"
-                placeholder="Apellido"
-                className="w-full bg-gray-800 rounded border border-gray-700 focus:border-primary focus:ring-2 focus:ring-secondary text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-
-            <div className="relative mb-4 w-full">
-              <label
-                htmlFor="email"
-                className="leading-7 text-sm text-gray-400"
-              >
-                Correo
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Correo"
-                className="w-full bg-gray-800 rounded border border-gray-700 focus:border-primary focus:ring-2 focus:ring-secondary text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className="relative mb-4 w-full">
-              <label
-                htmlFor="email"
-                className="leading-7 text-sm text-gray-400"
-              >
-                Teléfono
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Teléfono"
-                className="w-full bg-gray-800 rounded border border-gray-700 focus:border-primary focus:ring-2 focus:ring-secondary text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className="relative mb-4 w-full">
-              <label
-                htmlFor="message"
-                className="leading-7 text-sm text-gray-400"
-              >
-                Mensaje
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                className="w-full bg-gray-800 rounded border border-gray-700 focus:border-primary focus:ring-2 focus:ring-secondary h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-              ></textarea>
-            </div>
-
-            <button className="w-full text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-secondary rounded text-lg">
-              Enviar
-            </button>
-            <p className="text-xs text-gray-400 text-opacity-90 mt-3">
-              Chicharrones blog helvetica normcore iceland tousled brook viral
-              artisan.
-            </p>
-          </div>
+          <ContactForm />
         </div>
       </div>
     </section>

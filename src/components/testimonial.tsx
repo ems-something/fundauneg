@@ -4,6 +4,11 @@ function Testimonial() {
   return (
     <section className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 pt-24 sm:py-24 mx-auto">
+        <div className="flex justify-center">
+          <h2 className="sm:w-2/5 mb-12 text-3xl text-center text-white font-medium title-font">
+            Testimonios
+          </h2>
+        </div>
         <div className="flex flex-wrap -m-4">
           <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
             <div className="h-full text-center">
