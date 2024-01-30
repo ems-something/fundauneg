@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
 import {
   Body,
@@ -18,7 +18,7 @@ interface EmailProps {
   message: string;
 }
 
-export const Email: React.FC<Readonly<EmailProps>> = ({
+export const Email: FunctionComponent<Readonly<EmailProps>> = ({
   name,
   lastaname,
   email,
