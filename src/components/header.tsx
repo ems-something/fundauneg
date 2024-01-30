@@ -24,10 +24,11 @@ const Header = () => {
           <span className="text-white ml-3 text-xl">Fundauneg</span>
         </a>
         <nav className="text-gray-400 md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-white">First Link</a>
-          <a className="mr-5 hover:text-white">Second Link</a>
-          <a className="mr-5 hover:text-white">Third Link</a>
-          <a className="mr-5 hover:text-white">Fourth Link</a>
+          <a className="mr-5 hover:text-white cursor-pointer">First Link</a>
+          <a className="mr-5 hover:text-white cursor-pointer">Second Link</a>
+          <a className="mr-5 hover:text-white cursor-pointer" >Third Link</a>
+          <a className="mr-5 hover:text-white cursor-pointer">Fourth Link</a>
+          <a className="mr-5 hover:text-white cursor-pointer">Fourth Link</a>
         </nav>
       </div>
     </header>
