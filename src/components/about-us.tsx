@@ -2,26 +2,29 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="text-gray-400 bg-gray-900 body-font">
+    <section
+      id="about-us_section"
+      className="text-gray-400 bg-gray-900 body-font"
+    >
       <div className="container px-5 pt-24 sm:py-24 mx-auto">
         <div className="flex justify-center">
           <h2 className="sm:w-2/5 mb-12 text-3xl text-center text-white font-medium title-font">
             Nosotros
           </h2>
         </div>
-        <div className="flex items-center mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
-          <div className="sm:w-1/2 sm:h-96 h-80 w-80 sm:mr-10 inline-flex items-center justify-center shrink-0">
+        <div className="flex items-center sm:items-start mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+          <div className="sm:w-1/2 sm:h-[32rem] h-80 w-80 sm:mr-10 inline-xflex items-center justify-center shrink-0">
             <img
               alt="content"
               className="object-cover object-top h-full w-full rounded-lg"
-              src="/images/IMG_Mision.jpg"
+              src="/images/about-us/mision.jpg"
             />
           </div>
-          <div className="grow sm:text-left mt-6 sm:mt-0">
-            <h2 className="text-white text-center text-2xl title-font font-medium mb-8">
+          <div className="grow text-center mt-6 sm:mt-0">
+            <h2 className="text-white sm:text-left text-2xl title-font font-medium mb-8">
               Misión
             </h2>
-            <p className="leading-relaxed text-base sm:text-justify text-center">
+            <p className="leading-relaxed text-base sm:text-justify">
               En FUNDAUNEG, nos dedicamos a la promoción, desarrollo,
               consolidación y compromiso de la Universidad Nacional Experimental
               de Guayana. Ofrecemos servicios integrales de capacitación,
@@ -33,12 +36,12 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
-          <div className="grow sm:text-left mt-6 sm:mt-0">
-            <h2 className="text-white text-center text-2xl title-font font-medium mb-8">
+        <div className="flex items-center sm:items-start mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+          <div className="grow text-center mt-6 sm:mt-0">
+            <h2 className="text-white sm:text-left text-2xl title-font font-medium mb-8">
               Visión
             </h2>
-            <p className="leading-relaxed text-base sm:text-justify text-center">
+            <p className="leading-relaxed text-base sm:text-justify">
               Ser líderes destacados en la prestación de servicios de formación
               y capacitación respaldados por la Universidad Nacional
               Experimental de Guayana &quot;Manuel Carlos Piar&quot;
@@ -49,27 +52,27 @@ const AboutUs = () => {
               comunidad en general.
             </p>
           </div>
-          <div className="sm:w-1/2 sm:h-96 h-80 w-80 order-first sm:order-none sm:ml-10 inline-flex items-center justify-center shrink-0">
+          <div className="sm:w-1/2 sm:h-[32rem] h-80 w-80 order-first sm:order-none sm:ml-10 inline-flex items-center justify-center shrink-0">
             <img
               alt="content"
               className="object-cover object-top h-full w-full rounded-lg"
-              src="/images/IMG_Vision.jpg"
+              src="/images/about-us/vision.jpg"
             />
           </div>
         </div>
-        <div className="flex items-center mx-auto sm:flex-row flex-col">
-          <div className="sm:w-1/2 sm:h-96 h-80 w-80 sm:mr-10 inline-flex items-center justify-center shrink-0">
+        <div className="flex items-center sm:items-start mx-auto sm:flex-row flex-col">
+          <div className="sm:w-1/2 sm:h-[32rem] h-80 w-80 sm:mr-10 inline-flex items-center justify-center shrink-0">
             <img
               alt="content"
               className="object-cover object-top h-full w-full rounded-lg"
-              src="/images/IMG_Historia.jpg"
+              src="/images/about-us/historia.jpg"
             />
           </div>
-          <div className="grow sm:text-left mt-6 sm:mt-0">
-            <h2 className="text-white text-center text-2xl title-font font-medium mb-8">
+          <div className="grow text-center mt-6 sm:mt-0">
+            <h2 className="text-white sm:text-left text-2xl title-font font-medium mb-8">
               Historia
             </h2>
-            <p className="leading-relaxed text-base sm:text-justify text-center">
+            <p className="leading-relaxed text-base sm:text-justify">
               Fundada en 1988, la Fundación de la Universidad Nacional
               Experimental de Guayana &quot;Manuel Carlos Piar&quot; (FUNDAUNEG)
               se ha destacado por su compromiso con el crecimiento de la UNEG a
