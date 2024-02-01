@@ -4,7 +4,7 @@ import { render } from "@react-email/components";
 
 import { transporter, smtpEmail } from "@/utils/nodemailer";
 
-import { Email } from "@/components/email";
+import { Email } from "@/components/contact/email";
 
 export async function POST(req: NextRequest, res: NextResponse) {
   const body = await req.json();

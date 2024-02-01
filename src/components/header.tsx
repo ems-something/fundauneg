@@ -28,6 +28,18 @@ const Header = () => {
           <a className="mr-5 hover:text-white cursor-pointer">Cursos</a>
           <a className="mr-5 hover:text-white cursor-pointer" >Nosotros</a>
           <a className="mr-5 hover:text-white cursor-pointer">Contacto</a>
+          <a href="#content_section" className="mr-5 hover:text-white">
+            Formación Ofertada
+          </a>
+          <a href="#about-us_section" className="mr-5 hover:text-white">
+            Nosotros
+          </a>
+          <a href="#testimonials_section" className="mr-5 hover:text-white">
+            Opiniones
+          </a>
+          <a href="#contact_section" className="mr-5 hover:text-white">
+            Contacto
+          </a>
         </nav>
       </div>
     </header>
