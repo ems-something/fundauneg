@@ -32,7 +32,7 @@ const Tabs: FunctionComponent<TabsProps> = ({ tabs }) => {
   return (
     <>
       <div className="sm:w-2/4 mx-auto">
-        <div className="flex justify-center items-center sm:flex-row flex-col">
+        <div className="flex justify-center mb-12 flex-row">
           {Array.isArray(tabs) &&
             tabs.map((tab, index) => (
               <button
@@ -41,7 +41,7 @@ const Tabs: FunctionComponent<TabsProps> = ({ tabs }) => {
                 onClick={(e: MouseEvent<HTMLButtonElement>) =>
                   handlerTabsFunction(e, index)
                 }
-                className={`flex-1 sm:w-auto w-48 py-2 mb-12 text-3xl text-center font-medium title-font text-gray-500 ${
+                className={`flex-1 sm:w-auto w-48 py-2 sm:text-3xl text-xl text-center font-medium title-font text-gray-500 ${
                   selectedTab === index
                     ? "text-white border-b-4 border-primary"
                     : ""
