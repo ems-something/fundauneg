@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section
       className="min-h-screen text-white bg-top bg-cover bg-blend-overlay bg-fixed bg-black/50"
-      style={{ backgroundImage: `url(/images/IMG_hero-section.jpg)` }}
+      style={{ backgroundImage: `url(/images/IMG_hero-section2.png)` }}
     >
       <div className="container mx-auto flex pt-48 pb-24 px-5 items-center justify-center flex-col mix-blend-overlay">
         <img
