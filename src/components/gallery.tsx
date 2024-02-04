@@ -15,7 +15,7 @@ function Gallery() {
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
-          <div className="lg:w-1/3 sm:w-1/2 p-4">
+          <div className="lg:w-1/3 sm:w-1/2 h-96 p-4">
             <div className="flex relative">
               <img
                 alt="gallery"
@@ -23,12 +23,12 @@ function Gallery() {
                 src="/images/gallery/dermocosmiatria_integral.jpg"
               />
               <div className="px-8 py-10 relative z-10 w-full rounded-lg border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-80">
-                <h3 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
+                <h3 className="tracking-widest text-sm title-font font-medium text-primary mb-1">
                   Diplomado en Dermocosmiatría Integral
                 </h3>
-                <h1 className="title-font text-lg font-medium text-white mb-3">
+                <h4 className="title-font text-lg font-medium text-white mb-3">
                   Shooting Stars
-                </h1>
+                </h4>
                 <p className="leading-relaxed">
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
@@ -44,12 +44,12 @@ function Gallery() {
                 src="/images/gallery/higienista_dental.jpg"
               />
               <div className="px-8 py-10 relative z-10 w-full rounded-lg border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-80">
-                <h3 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
+                <h3 className="tracking-widest text-sm title-font font-medium text-primary mb-1">
                   Diplomado en Higienista Dental
                 </h3>
-                <h1 className="title-font text-lg font-medium text-white mb-3">
+                <h4 className="title-font text-lg font-medium text-white mb-3">
                   The Catalyzer
-                </h1>
+                </h4>
                 <p className="leading-relaxed">
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
@@ -65,12 +65,12 @@ function Gallery() {
                 src="/images/gallery/conversatorio.jpg"
               />
               <div className="px-8 py-10 relative z-10 w-full rounded-lg border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-80">
-                <h3 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
+                <h3 className="tracking-widest text-sm title-font font-medium text-primary mb-1">
                   Conversatorio
                 </h3>
-                <h1 className="title-font text-lg font-medium text-white mb-3">
+                <h4 className="title-font text-lg font-medium text-white mb-3">
                   The 400 Blows
-                </h1>
+                </h4>
                 <p className="leading-relaxed">
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
@@ -86,12 +86,12 @@ function Gallery() {
                 src="/images/gallery/ecografia_abdominal.jpg"
               />
               <div className="px-8 py-10 relative z-10 w-full rounded-lg border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-80">
-                <h3 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
+                <h3 className="tracking-widest text-sm title-font font-medium text-primary mb-1">
                   Diplomado en Ecografía Abdominal
                 </h3>
-                <h1 className="title-font text-lg font-medium text-white mb-3">
+                <h4 className="title-font text-lg font-medium text-white mb-3">
                   Alper Kamu
-                </h1>
+                </h4>
                 <p className="leading-relaxed">
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
@@ -107,12 +107,12 @@ function Gallery() {
                 src="/images/gallery/atencion_al_publico.jpg"
               />
               <div className="px-8 py-10 relative z-10 w-full rounded-lg border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-80">
-                <h3 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
+                <h3 className="tracking-widest text-sm title-font font-medium text-primary mb-1">
                   Diplomado en Atención al Público
                 </h3>
-                <h1 className="title-font text-lg font-medium text-white mb-3">
+                <h4 className="title-font text-lg font-medium text-white mb-3">
                   Neptune
-                </h1>
+                </h4>
                 <p className="leading-relaxed">
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
@@ -128,12 +128,12 @@ function Gallery() {
                 src="/images/gallery/formacion_docente.jpg"
               />
               <div className="px-8 py-10 relative z-10 w-full rounded-lg border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-80">
-                <h3 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
+                <h3 className="tracking-widest text-sm title-font font-medium text-primary mb-1">
                   Diplomado en Formación Docente
                 </h3>
-                <h1 className="title-font text-lg font-medium text-white mb-3">
+                <h4 className="title-font text-lg font-medium text-white mb-3">
                   Holden Caulfield
-                </h1>
+                </h4>
                 <p className="leading-relaxed">
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
