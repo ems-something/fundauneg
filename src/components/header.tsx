@@ -7,12 +7,12 @@ const Header = () => {
   const scrollPosition = useScrollPosition();
 
   return (
-    <header className= "w-full sm:h-20 h-32 fixed top-0 z-50 transition-shadow bg-Blue-500"
-      // className={`w-full sm:h-20 h-32 fixed top-0 z-50 transition-shadow bg-Slate-50 ${
-      //   scrollPosition > 0
-      //     ? "shadow bg-opacity-70 backdrop-blur-lg backdrop-filter"
-      //     : "shadow-none"
-      // }`}
+    <header
+      className={`w-full sm:h-20 h-32 fixed top-0 z-50 transition-shadow ${
+        scrollPosition > 0
+          ? "shadow bg-opacity-70 backdrop-blur-lg backdrop-filter"
+          : "shadow-none"
+      }`}
     >
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center mix-blend-overlay">
         <a className="flex title-font font-medium items-center mb-4 md:mb-0">
@@ -24,10 +24,6 @@ const Header = () => {
           <span className="text-white ml-3 text-xl">Fundauneg</span>
         </a>
         <nav className="text-gray-400 md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-white cursor-pointer">Inicio</a>
-          <a className="mr-5 hover:text-white cursor-pointer">Cursos</a>
-          <a className="mr-5 hover:text-white cursor-pointer" >Nosotros</a>
-          <a className="mr-5 hover:text-white cursor-pointer">Contacto</a>
           <a href="#content_section" className="mr-5 hover:text-white">
             Formación Ofertada
           </a>
