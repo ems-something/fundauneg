@@ -1,7 +1,7 @@
 "use client";
 import React, { ChangeEvent, useState } from "react";
 
-const SearchBlock = () => {
+const SearchSection = () => {
   const [searchValue, setSearchValue] = useState("Buscar...");
 
   const searchHandler = (event: ChangeEvent<HTMLInputElement>) => {
@@ -58,4 +58,4 @@ const SearchBlock = () => {
   );
 };
 
-export default SearchBlock;
+export default SearchSection;

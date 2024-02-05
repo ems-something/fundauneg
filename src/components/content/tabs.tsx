@@ -31,7 +31,7 @@ const Tabs: FunctionComponent<TabsProps> = ({ tabs }) => {
 
   return (
     <>
-      <div className="sm:w-2/4 mx-auto">
+      <div className="sm:w-4/5 mx-auto">
         <div className="flex justify-center mb-12 flex-row">
           {Array.isArray(tabs) &&
             tabs.map((tab, index) => (

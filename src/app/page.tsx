@@ -1,5 +1,5 @@
 import HeroSection from "@/components/hero-section";
-import SearchBlock from "@/components/search-block";
+import SearchSection from "@/components/search-section";
 import Content from "@/components/content/content";
 import AboutUs from "@/components/about-us";
 import Gallery from "@/components/gallery";
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <SearchBlock />
+      <SearchSection />
       <Content />
       <AboutUs />
       <Gallery />
