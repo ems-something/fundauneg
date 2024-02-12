@@ -6,7 +6,7 @@ const HeroSection = () => {
       className="h-screen w-full text-white bg-top bg-cover bg-blend-overlay bg-fixed bg-black/50"
       style={{ backgroundImage: `url(/images/hero-section/hero-section.jpg)` }}
     >
-      <div className="container mx-auto flex pt-48 pb-24 px-5 items-center justify-center flex-col mix-blend-overlay">
+      <div className="container mx-auto flex p-32 items-center justify-center flex-col mix-blend-overlay">
         <img
           className="lg:w-1/5 md:w-1/3 w-2/5 mb-10"
           alt="fundauneg logo"

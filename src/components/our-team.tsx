@@ -3,7 +3,7 @@ import React from "react";
 function OurTeam() {
   return (
     <section className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-16 mx-auto">
         <div className="flex flex-col items-center text-center w-full mb-20">
           <h2 className="sm:w-2/5 mb-4 text-3xl text-center text-white font-medium title-font">
             Nuestro Equipo

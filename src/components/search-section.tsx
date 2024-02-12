@@ -1,7 +1,11 @@
 "use client";
-import React, { ChangeEvent, useState } from "react";
+import React, { FunctionComponent, ChangeEvent, useState } from "react";
 
-const SearchSection = () => {
+export type SearchProps = {
+  onSearch: (value: string) => void;
+};
+
+const SearchSection: FunctionComponent<SearchProps> = ({ onSearch }) => {
   const [searchValue, setSearchValue] = useState("Buscar...");
 
   const searchHandler = (event: ChangeEvent<HTMLInputElement>) => {
@@ -12,13 +16,13 @@ const SearchSection = () => {
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
       // Here, we call the onSearch function and pass the value
-      //onSearch(searchValue);
+      onSearch(searchValue);
     }
   };
 
   return (
     <section className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 pt-24 sm:py-24 mx-auto">
+      <div className="container px-5 py-16 mx-auto">
         <div className="flex flex-col items-center justify-between">
           <h2 className="sm:w-2/5 text-3xl text-center text-white mb-12 font-medium title-font">
             Oferta Académica Actual

@@ -6,7 +6,7 @@ const AboutUs = () => {
       id="about-us_section"
       className="text-gray-400 bg-gray-900 body-font"
     >
-      <div className="container px-5 pt-24 sm:py-24 mx-auto">
+      <div className="container px-5  pt-16 sm:py-24 mx-auto">
         <div className="flex justify-center">
           <h2 className="sm:w-2/5 mb-12 text-3xl text-center text-white font-medium title-font">
             Nosotros

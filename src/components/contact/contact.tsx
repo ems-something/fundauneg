@@ -7,7 +7,7 @@ function Contact() {
       id="contact_section"
       className="text-gray-400 bg-gray-900 body-font relative"
     >
-      <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div className="container px-5 py-16 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"
