@@ -10,21 +10,36 @@ import Testimonial from "@/components/testimonial";
 import OurTeam from "@/components/our-team";
 import Contact from "@/components/contact/contact";
 
+import { tabsData as tabs } from "./data/tabsData";
+
 export default function Home() {
-  const [searchValue, setSearchValue] = useState("");
+  const [filteredTabs, setFilteredTabs] = useState(tabs);
 
   const handleSearch = (value: string) => {
-    // Here, you can access the search value when Enter is pressed
-    console.log(value);
-    setSearchValue(value);
+    const newFilteredTabs = tabs.map((tab) => ({
+      ...tab,
+      content: tab.content.filter(({ title }) =>
+        title
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase()
+          .includes(
+            value
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .toLowerCase()
+          )
+      ),
+    }));
+    console.log(newFilteredTabs);
+    setFilteredTabs(newFilteredTabs);
   };
 
   return (
     <main>
       <HeroSection />
       <SearchSection onSearch={handleSearch} />
-      <Content filter={searchValue} />
-      <AboutUs />
+      <Content tabs={filteredTabs} /> <AboutUs />
       <Gallery />
       <Testimonial />
       <OurTeam />

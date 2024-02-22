@@ -6,18 +6,9 @@ export type SearchProps = {
 };
 
 const SearchSection: FunctionComponent<SearchProps> = ({ onSearch }) => {
-  const [searchValue, setSearchValue] = useState("Buscar...");
-
   const searchHandler = (event: ChangeEvent<HTMLInputElement>) => {
     const { target } = event;
-    setSearchValue(target.value);
-  };
-
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === "Enter") {
-      // Here, we call the onSearch function and pass the value
-      onSearch(searchValue);
-    }
+    onSearch(target.value);
   };
 
   return (
@@ -37,10 +28,9 @@ const SearchSection: FunctionComponent<SearchProps> = ({ onSearch }) => {
             <input
               type="search"
               name="search"
-              placeholder={searchValue}
+              placeholder={"Buscar..."}
               className="bg-white h-10 px-5 pr-10 w-full rounded-full text-sm focus:outline-none"
               onChange={(event) => searchHandler(event)}
-              onKeyDown={handleKeyDown}
             />
             <button type="submit" className="absolute right-0 top-0 mt-3 mr-4">
               <svg

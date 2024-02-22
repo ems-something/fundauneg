@@ -35,7 +35,7 @@ function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 CORREO
               </h2>
-              <a className="text-primary leading-relaxed">
+              <a className="text-secondary leading-relaxed">
                 formacionfundauneg@gmail.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
