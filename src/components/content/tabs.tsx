@@ -53,25 +53,26 @@ const Tabs: FunctionComponent<TabsProps> = ({ tabs }) => {
           <div key={tab.label}>
             <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
               {selectedTab === tab.label &&
-                tab.content.map((program) => (
-                  <div
-                    key={program.title}
-                    className="p-4 md:w-1/3 sm:mb-0 mb-6"
-                  >
+                tab.content.map((item, index) => (
+                  <div key={index} className="p-4 md:w-1/3 sm:mb-0 mb-6">
                     <div className="rounded-lg h-64 overflow-hidden hover:scale-110 hover:brightness-125">
                       <img
                         alt="content"
                         className="object-cover object-center h-full w-full"
-                        src={program.imgUrl}
+                        src={item.imgUrl}
                       />
                     </div>
                     <h2 className="text-xl font-medium title-font text-white mt-5">
-                      {program.title}
+                      {item.title}
                     </h2>
-                    <p className="text-base leading-relaxed mt-2">
-                      {program.description}
+                    <p className="text-base leading-relaxed mt-2 sm:text-justify">
+                      {item.description}
                     </p>
-                    <a className="text-secondary inline-flex items-center mt-3">
+                    <a
+                      className="text-secondary inline-flex items-center mt-3"
+                      href={item.link}
+                      target="_blank"
+                    >
                       Descargar Información
                       <svg
                         fill="none"

@@ -10,7 +10,7 @@ import Testimonial from "@/components/testimonial";
 import OurTeam from "@/components/our-team";
 import Contact from "@/components/contact/contact";
 
-import { tabsData as tabs } from "./data/tabsData";
+import { tabsData as tabs } from "@/app/data/tabsData";
 
 export default function Home() {
   const [filteredTabs, setFilteredTabs] = useState(tabs);

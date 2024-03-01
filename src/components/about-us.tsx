@@ -1,5 +1,7 @@
 import React from "react";
 
+import { aboutUsData as aboutUs } from "@/app/data/about-usData";
+
 const AboutUs = () => {
   return (
     <section
@@ -12,79 +14,32 @@ const AboutUs = () => {
             Nosotros
           </h2>
         </div>
-        <div className="flex items-center sm:items-start mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
-          <div className="sm:w-1/2 sm:h-[32rem] h-80 w-80 sm:mr-10 inline-xflex items-center justify-center shrink-0">
-            <img
-              alt="content"
-              className="object-cover object-top h-full w-full rounded-lg"
-              src="/images/about-us/mision.jpg"
-            />
+        {aboutUs.map((item, index) => (
+          <div
+            className={`flex items-center sm:items-start mx-auto ${
+              index + 1 < aboutUs.length
+                ? "border-b pb-10 mb-10 border-gray-800"
+                : ""
+            } sm:flex-row flex-col`}
+            key={index}
+          >
+            <div className="sm:w-1/2 sm:h-[32rem] h-80 w-80 sm:mr-10 inline-xflex items-center justify-center shrink-0">
+              <img
+                alt="content"
+                className="object-cover object-top h-full w-full rounded-lg"
+                src={item.imgUrl}
+              />
+            </div>
+            <div className="grow text-center mt-6 sm:mt-0">
+              <h2 className="text-white sm:text-left text-2xl title-font font-medium mb-8">
+                {item.title}
+              </h2>
+              <p className="leading-relaxed text-base sm:text-justify">
+                {item.description}
+              </p>
+            </div>
           </div>
-          <div className="grow text-center mt-6 sm:mt-0">
-            <h2 className="text-white sm:text-left text-2xl title-font font-medium mb-8">
-              Misión
-            </h2>
-            <p className="leading-relaxed text-base sm:text-justify">
-              En FUNDAUNEG, nos dedicamos a la promoción, desarrollo,
-              consolidación y compromiso de la Universidad Nacional Experimental
-              de Guayana. Ofrecemos servicios integrales de capacitación,
-              formación, asistencia técnica y administración dirigidos a
-              instituciones, asociaciones y la comunidad en general. Buscamos
-              impulsar el desarrollo competitivo a través del mejoramiento
-              continuo, estableciendo vínculos sólidos y colaborativos con
-              diferentes sectores.
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center sm:items-start mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
-          <div className="grow text-center mt-6 sm:mt-0">
-            <h2 className="text-white sm:text-left text-2xl title-font font-medium mb-8">
-              Visión
-            </h2>
-            <p className="leading-relaxed text-base sm:text-justify">
-              Ser líderes destacados en la prestación de servicios de formación
-              y capacitación respaldados por la Universidad Nacional
-              Experimental de Guayana &quot;Manuel Carlos Piar&quot;
-              (FUNDAUNEG), marcando la pauta a nivel regional, nacional e
-              internacional. Aspiramos a ser reconocidos por nuestras políticas
-              de calidad, oportunidad y competitividad, consolidando alianzas
-              sólidas con el sector empresarial, profesores, estudiantes y la
-              comunidad en general.
-            </p>
-          </div>
-          <div className="sm:w-1/2 sm:h-[32rem] h-80 w-80 order-first sm:order-none sm:ml-10 inline-flex items-center justify-center shrink-0">
-            <img
-              alt="content"
-              className="object-cover object-top h-full w-full rounded-lg"
-              src="/images/about-us/vision.jpg"
-            />
-          </div>
-        </div>
-        <div className="flex items-center sm:items-start mx-auto sm:flex-row flex-col">
-          <div className="sm:w-1/2 sm:h-[32rem] h-80 w-80 sm:mr-10 inline-flex items-center justify-center shrink-0">
-            <img
-              alt="content"
-              className="object-cover object-top h-full w-full rounded-lg"
-              src="/images/about-us/historia.jpg"
-            />
-          </div>
-          <div className="grow text-center mt-6 sm:mt-0">
-            <h2 className="text-white sm:text-left text-2xl title-font font-medium mb-8">
-              Historia
-            </h2>
-            <p className="leading-relaxed text-base sm:text-justify">
-              Fundada en 1988, la Fundación de la Universidad Nacional
-              Experimental de Guayana &quot;Manuel Carlos Piar&quot; (FUNDAUNEG)
-              se ha destacado por su compromiso con el crecimiento de la UNEG a
-              nivel regional, nacional e internacional. Establecemos conexiones
-              significativas con el sector empresarial, profesores, estudiantes
-              y la comunidad en general. Nuestros servicios abarcan la
-              capacitación, formación, asistencia técnica y administración,
-              contribuyendo al desarrollo sostenible y competitivo de quienes
-              confían en nosotros.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

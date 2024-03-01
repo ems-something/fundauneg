@@ -8,6 +8,7 @@ type Tab = {
     imgUrl: string;
     title: string;
     description: string;
+    link: string;
   }[];
 };
 

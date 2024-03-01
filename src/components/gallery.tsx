@@ -1,12 +1,12 @@
 import React from "react";
 
-import { galleryData } from "@/app/data/galleryData";
+import { galleryData as gallery } from "@/app/data/galleryData";
 
 function Gallery() {
   return (
     <section className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-16 mx-auto">
-        <div className="flex flex-col items-center text-center w-full mb-20">
+        <div className="flex flex-col items-center text-center w-full mb-12">
           <h2 className="sm:w-2/5 mb-4 text-3xl text-white font-medium title-font">
             Galeria
           </h2>
@@ -17,7 +17,7 @@ function Gallery() {
           </p>
         </div>
         <div className="container mx-auto p-10 grid lg:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-10 transform duration-500">
-          {galleryData.map((item, index) => (
+          {gallery.map((item, index) => (
             <div
               className="max-w-sm transform hover:-translate-y-1 duration-300 mx-3"
               key={index}
