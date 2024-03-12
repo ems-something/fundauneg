@@ -1,5 +1,5 @@
 "use client";
-import React, { FunctionComponent, ChangeEvent, useState } from "react";
+import React, { FunctionComponent, ChangeEvent } from "react";
 
 export type SearchProps = {
   onSearch: (value: string) => void;
