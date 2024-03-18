@@ -9,8 +9,8 @@ function Testimonial() {
       className="text-gray-400 bg-gray-900 body-font"
     >
       <div className="container px-5 py-16 mx-auto">
-        <div className="flex justify-center">
-          <h2 className="sm:w-2/5 mt-5 mb-12 text-3xl text-center text-white font-medium title-font">
+        <div className="flex justify-center mb-20">
+          <h2 className="sm:w-2/5 mt-5 mb-4 text-3xl text-center text-white font-medium title-font">
             Opiniones
           </h2>
         </div>

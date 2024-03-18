@@ -1,26 +1,22 @@
 export const ourTeamData = [
   {
-    name: "Alper Kamu",
-    occupation: "UI Developer",
-    description:
-      "DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.",
+    imgUrl: "/images/our-team/presidenta_fundauneg.jpg",
+    name: "MARÍA ELENA LATUFF",
+    occupation: "Presidenta de Fundauneg",
   },
   {
-    name: "Holden Caulfield",
-    occupation: "UI Developer",
-    description:
-      "DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.",
+    imgUrl: "/images/our-team/gerente_general_de_fundauneg.jpg",
+    name: "BRIZAIDA ROJAS",
+    occupation: "Gerente General de Fundauneg",
   },
   {
-    name: "Atticus Finch",
-    occupation: "UI Developer",
-    description:
-      "DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.",
+    imgUrl: "/images/our-team/coordinadora_de_administracion.jpg",
+    name: "ERIKA AZOCA",
+    occupation: "Coordinadora de Administración de Fundauneg",
   },
   {
-    name: "Henry Letham",
-    occupation: "UI Developer",
-    description:
-      "DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.",
+    imgUrl: "/images/our-team/coordinadora_de_proyectos.jpg",
+    name: "ENNIS URBAEZ",
+    occupation: "Coordinadora de Proyectos de Fundauneg",
   },
 ];

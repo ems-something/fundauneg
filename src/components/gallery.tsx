@@ -6,17 +6,12 @@ function Gallery() {
   return (
     <section className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-16 mx-auto">
-        <div className="flex flex-col items-center text-center w-full mb-12">
+        <div className="flex justify-center text-center w-full mb-20">
           <h2 className="sm:w-2/5 mb-4 text-3xl text-white font-medium title-font">
             Galeria
           </h2>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            havent heard of them man bun deep jianbing selfies heirloom.
-          </p>
         </div>
-        <div className="container mx-auto p-10 grid lg:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-10 transform duration-500">
+        <div className="container mx-auto p-4 grid lg:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-10 transform duration-500">
           {gallery.map((item, index) => (
             <div
               className="max-w-sm transform hover:-translate-y-1 duration-300 mx-3"
