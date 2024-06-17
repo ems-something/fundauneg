@@ -62,14 +62,14 @@ const Tabs: FunctionComponent<TabsProps> = ({ tabs }) => {
                         src={item.imgUrl}
                       />
                     </div>
-                    <h2 className="text-xl font-medium title-font text-white mt-5">
+                    <h2 className="text-xl font-medium title-font text-white mt-5 text-center sm:text-left">
                       {item.title}
                     </h2>
-                    <p className="text-base leading-relaxed mt-2 sm:text-justify">
+                    <p className="text-base leading-relaxed mt-2  text-justify sm:text-left">
                       {item.description}
                     </p>
                     <a
-                      className="text-secondary inline-flex items-center mt-3"
+                      className="text-secondary mt-3 flex justify-center items-center sm:justify-start"
                       href={item.link}
                       target="_blank"
                     >

@@ -22,7 +22,7 @@ const Content: FunctionComponent<ContentProps> = ({ tabs }) => {
   return (
     <section
       id="content_section"
-      className="text-gray-400 bg-gray-900 body-font"
+      className="text-gray-400 bg-gray-900 body-font p-6"
     >
       <div className="container px-5 py-16 mx-auto">
         <Tabs tabs={tabs} />

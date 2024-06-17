@@ -6,7 +6,7 @@ function Gallery() {
   return (
     <section className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-16 mx-auto">
-        <div className="flex justify-center text-center w-full mb-20">
+        <div className="flex justify-center text-center w-full mb-10">
           <h2 className="sm:w-2/5 mb-4 text-3xl text-white font-medium title-font">
             Galeria
           </h2>

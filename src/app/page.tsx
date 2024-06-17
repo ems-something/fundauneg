@@ -11,9 +11,15 @@ import OurTeam from "@/components/our-team";
 import Contact from "@/components/contact/contact";
 
 import { tabsData as tabs } from "@/app/data/tabsData";
+import HamburgerMenu from "@/components/HamburgerMenu";
 
 export default function Home() {
   const [filteredTabs, setFilteredTabs] = useState(tabs);
+  const [openHamburger, setOpenHamburger] = useState<boolean>(false);
+
+  const handleClick = () => {
+    setOpenHamburger(!openHamburger)
+  }
 
   const handleSearch = (value: string) => {
     const newFilteredTabs = tabs.map((tab) => ({
@@ -37,7 +43,10 @@ export default function Home() {
 
   return (
     <main>
-      <HeroSection />
+      {openHamburger && (
+        <HamburgerMenu open={openHamburger} setOpen={handleClick}/>
+      )}
+      <HeroSection open={openHamburger} setOpen={handleClick} />
       <SearchSection onSearch={handleSearch} />
       <Content tabs={filteredTabs} /> <AboutUs />
       <Gallery />
