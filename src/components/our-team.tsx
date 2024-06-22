@@ -13,7 +13,10 @@ function OurTeam() {
         </div>
         <div className="flex flex-wrap -m-4 justify-center">
           {ourTeam.map((item, index) => (
-            <div className="w-full sm:w-64 p-6 h-full flex flex-col items-center text-center">
+            <div
+              className="w-full sm:w-64 p-6 h-full flex flex-col items-center text-center"
+              key={index}
+            >
               <img
                 alt="team"
                 className="flex-shrink-0 rounded-lg w-full sm:w-56 object-cover object-center mb-4"
