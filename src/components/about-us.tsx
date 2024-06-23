@@ -6,9 +6,9 @@ const AboutUs = () => {
   return (
     <section
       id="about-us_section"
-      className=" text-gray-400 bg-gray-900 body-font p-6"
+      className=" text-gray-400 bg-gray-900 body-font"
     >
-      <div className="container px-5 pt-16 sm:py-24 mx-auto">
+      <div className="container px-5 sm:py-24 mx-auto">
         <div className="flex justify-center mb-20">
           <h2 className="sm:w-2/5 mb-4 text-3xl text-center text-white font-medium title-font">
             Nosotros

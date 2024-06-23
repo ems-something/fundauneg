@@ -6,9 +6,9 @@ function Testimonial() {
   return (
     <section
       id="testimonials_section"
-      className="text-gray-400 bg-gray-900 body-font p-6"
+      className="text-gray-400 bg-gray-900 body-font"
     >
-      <div className="container px-5 py-16 mx-auto">
+      <div className="container px-5  mx-auto">
         <div className="flex justify-center mb-10">
           <h2 className="sm:w-2/5 mt-5 mb-4 text-3xl text-center text-white font-medium title-font">
             Opiniones

@@ -24,7 +24,7 @@ const Content: FunctionComponent<ContentProps> = ({ tabs }) => {
       id="content_section"
       className="text-gray-400 bg-gray-900 body-font p-6"
     >
-      <div className="container px-5 py-16 mx-auto">
+      <div className="container py-16 mx-auto">
         <Tabs tabs={tabs} />
       </div>
     </section>

@@ -13,7 +13,7 @@ const SearchSection: FunctionComponent<SearchProps> = ({ onSearch }) => {
 
   return (
     <section className="text-gray-400 bg-gray-900 body-font" id="offers">
-      <div className="container px-5 pt-14 mx-auto">
+      <div className="container px-4 pt-14 mx-auto">
         <div className="flex flex-col items-center justify-between">
           <h2 className="sm:w-2/5 text-3xl text-center text-white mb-12 font-medium title-font">
             Oferta Académica Actual

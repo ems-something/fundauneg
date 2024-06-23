@@ -51,7 +51,7 @@ const Tabs: FunctionComponent<TabsProps> = ({ tabs }) => {
       <div className="py-4">
         {tabs.map((tab) => (
           <div key={tab.label}>
-            <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div className="flex flex-wrap sm:-m-4  -mt-4">
               {selectedTab === tab.label &&
                 tab.content.map((item, index) => (
                   <div key={index} className="p-4 md:w-1/3 sm:mb-0 mb-6">
