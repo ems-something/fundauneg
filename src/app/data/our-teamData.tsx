@@ -11,7 +11,7 @@ export const ourTeamData = [
   },
   {
     imgUrl: "/images/our-team/coordinadora_de_administracion.jpg",
-    name: "ERIKA AZOCA",
+    name: "ERIKA AZOCAR",
     occupation: "Coordinadora de Administración de Fundauneg",
   },
   {
