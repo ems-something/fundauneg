@@ -19,7 +19,7 @@ function OurTeam() {
             >
               <img
                 alt="team"
-                className="flex-shrink-0 rounded-lg w-full sm:w-56 object-cover object-center mb-4"
+                className="shrink-0 rounded-lg w-8/12 sm:w-56 object-cover object-center mb-4"
                 src={item.imgUrl}
               />
               <div className="w-full">

@@ -11,7 +11,7 @@ function Gallery() {
             Galeria
           </h2>
         </div>
-        <div className="container mx-auto p-4 grid lg:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-10 transform duration-500">
+        <div className="container mx-auto p-4 grid lg:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-10 justify-items-center transform duration-500">
           {gallery.map((item, index) => (
             <div
               className="max-w-sm transform hover:-translate-y-1 duration-300 mx-3"
