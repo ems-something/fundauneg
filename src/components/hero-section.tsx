@@ -11,7 +11,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ open, setOpen }) => {
       className="h-screen w-full text-white bg-top bg-cover bg-blend-overlay bg-fixed bg-black/50 flex flex-col justify-between items-center"
       style={{ backgroundImage: `url(/images/hero-section/hero-section.jpg)` }}
     >
-      <button className="ml-4 mt-4 sm:hidden" onClick={setOpen}>
+      <button className="self-start ml-4 mt-4 sm:hidden" onClick={setOpen}>
         <img src="/images/menu.png" alt="" width={30} />
       </button>
       <div className="container h-screen p-6 flex flex-col justify-center items-center sm:p-32  mix-blend-overlay">
