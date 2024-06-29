@@ -71,7 +71,7 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
       >
         <Form>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap justify-center">
             <div className="relative pr-2 mb-4 w-1/2">
               <label htmlFor="name" className="leading-7 text-sm text-gray-400">
                 Nombre
@@ -176,9 +176,8 @@ const ContactForm = () => {
             >
               Enviar
             </button>
-            <p className="text-xs text-gray-400 text-opacity-90 mt-3">
-              Chicharrones blog helvetica normcore iceland tousled brook viral
-              artisan.
+            <p className="text-xs text-gray-400 text-opacity-90 text-center mt-3">
+              Dejanos saber tus dudas.
             </p>
           </div>
         </Form>

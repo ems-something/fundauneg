@@ -51,7 +51,7 @@ function Contact() {
               Contáctanos
             </h2>
             <p className="leading-relaxed">
-              Post-ironic portland shabby chic echo park, banjo fashion axe
+              Se parte de la comunidad de Fundauneg
             </p>
           </div>
           <ContactForm />
