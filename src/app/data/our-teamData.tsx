@@ -6,7 +6,7 @@ export const ourTeamData = [
   },
   {
     imgUrl: "/images/our-team/gerente_general_de_fundauneg.jpg",
-    name: "BRIZAIDA ROJAS",
+    name: "BRISAYDA ROJAS",
     occupation: "Gerente General de Fundauneg",
   },
   {
