@@ -27,8 +27,8 @@ function Contact() {
                 DIRECCIÓN
               </h2>
               <p className="mt-1">
-                Torre Alférez, Nivel Mezzanina, Oficina 3-A.
-                <br /> Fundauneg. Alta Vista. Puerto Ordaz.
+                Torre Alférez, Nivel Mezzanina, Oficina 3-A. Fundauneg. Alta
+                Vista. Puerto Ordaz.
               </p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
