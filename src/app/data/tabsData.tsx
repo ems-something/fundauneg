@@ -97,8 +97,8 @@ export const tabsData = [
         imgUrl: "/images/content/courses/maquillaje.jpg",
         title: "Maquillaje",
         description:
-          "Swag shoindegoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
-        link: "",
+          "El objetivo del curso es formar un personal apto y calificado en el área de la belleza que pueda iniciar a trabajar con cliente, ofreciendo servicios de maquillaje social, trabajar con el manejo de las redes sociales para su marca personal, y estar preparado para propagar las técnicas aprendidas.",
+        link: "https://docs.google.com/document/d/1999jD-MW6_QJJb4FWZRBy7pyxI8vaC24/edit?usp=sharing&ouid=102159316298342241851&rtpof=true&sd=true",
       },
       {
         imgUrl: "/images/content/courses/ingles_basico.jpg",
