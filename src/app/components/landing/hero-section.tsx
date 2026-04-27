@@ -27,6 +27,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ open, setOpen }) => {
           <p className="font-light leading-relaxed md:text-3xl text-xl">
             Formación y capacitación con respaldo universitario
           </p>
+          <button className="mt-6 p-2 border-2 border-solid rounded-md">
+            Comienza ahora 
+          </button>
         </div>
       </div>
     </section>
