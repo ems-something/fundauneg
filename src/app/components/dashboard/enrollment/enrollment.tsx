@@ -20,7 +20,11 @@ const mockData = {
 		description:
 			" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis ipsum a mattis fermentum. Nam sed urna quis augue iaculis dignissim. Sed sed egestas nisi, eget viverra arcu. Praesent euismod id diam id bibendum. Vestibulum sodales in metus non tempor. Sed fermentum elit a nisl congue, vel vestibulum metus sollicitudin. In auctor commodo dui, pharetra tincidunt nibh cursus sed. Nulla sed rhoncus erat. Proin pretium vehicula pellentesque. Donec pellentesque a dui et molestie. Curabitur erat ante, scelerisque sit amet volutpat non, venenatis a lacus. Suspendisse ut ultrices ex, sed vehicula purus. Vestibulum ultrices luctus diam, in iaculis enim commodo at.Nam nec tortor egestas, pharetra sem quis, venenatis nisi. Nulla id tristique urna. Aliquam viverra fringilla malesuada. Etiam ex mauris, elementum eu venenatis interdum, ullamcorper a lectus. Nunc erat massa, ultricies sed lobortis nec, maximus in quam. Phasellus nec purus tortor. Integer convallis sapien ac enim interdum blandit sed eget ipsum. Aenean nec bibendum lorem. Pellentesque dignissim mi a tincidunt pellentesque. Suspendisse at mauris eu nulla iaculis bibendum. Nunc eros nunc, rutrum dignissim erat vitae, pharetra tincidunt tellus. Proin quis nibh odio. Proin vestibulum turpis non egestas gravida. Vivamus tincidunt justo ut arcu gravida volutpat. Phasellus bibendum suscipit dolor consequat auctor. Nunc dignissim libero interdum arcu eleifend, id auctor quam pretium.",
 		program: "Diplomado en Tecnología",
-		offers: ["20% descuento", "Pago en cuotas"],
+		offers: [
+			"Ecografía Abdominal",
+			"Formación Docente",
+			"Programación Web",
+		],
 		fee: "$100",
 	},
 	Curso: {
@@ -28,7 +32,11 @@ const mockData = {
 		description:
 			" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis ipsum a mattis fermentum. Nam sed urna quis augue iaculis dignissim. Sed sed egestas nisi, eget viverra arcu. Praesent euismod id diam id bibendum. Vestibulum sodales in metus non tempor. Sed fermentum elit a nisl congue, vel vestibulum metus sollicitudin. In auctor commodo dui, pharetra tincidunt nibh cursus sed. Nulla sed rhoncus erat. Proin pretium vehicula pellentesque. Donec pellentesque a dui et molestie. Curabitur erat ante, scelerisque sit amet volutpat non, venenatis a lacus. Suspendisse ut ultrices ex, sed vehicula purus. Vestibulum ultrices luctus diam, in iaculis enim commodo at. Nam nec tortor egestas, pharetra sem quis, venenatis nisi. Nulla id tristique urna. Aliquam viverra fringilla malesuada. Etiam ex mauris, elementum eu venenatis interdum, ullamcorper a lectus. Nunc erat massa, ultricies sed lobortis nec, maximus in quam. Phasellus nec purus tortor. Integer convallis sapien ac enim interdum blandit sed eget ipsum. Aenean nec bibendum lorem. Pellentesque dignissim mi a tincidunt pellentesque.",
 		program: "Curso de Desarrollo Web",
-		offers: ["10% descuento", "Acceso premium"],
+		offers: [
+			"Asistente Administrativo",
+			"Atención al Cliente",
+			"Cómo Generar Ingreso en Mercados Financiero",
+		],
 		fee: "$50",
 	},
 	Taller: {
@@ -36,7 +44,7 @@ const mockData = {
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis ipsum a mattis fermentum. Nam sed urna quis augue iaculis dignissim. Sed sed egestas nisi, eget viverra arcu. Praesent euismod id diam id bibendum. Vestibulum sodales in metus non tempor. Sed fermentum elit a nisl congue, vel vestibulum metus sollicitudin. In auctor commodo dui, pharetra tincidunt nibh cursus sed. Nulla sed rhoncus erat. Proin pretium vehicula pellentesque. Donec pellentesque a dui et molestie. Curabitur erat ante, scelerisque sit amet volutpat non, venenatis a lacus. Suspendisse ut ultrices ex, sed vehicula purus. Vestibulum ultrices luctus diam, in iaculis enim commodo at. Nam nec tortor egestas, pharetra sem quis, venenatis nisi. Nulla id tristique urna. Aliquam viverra fringilla malesuada. Etiam ex mauris, elementum eu venenatis interdum, ullamcorper a lectus. Nunc erat massa, ultricies sed lobortis nec, maximus in quam. Phasellus nec purus tortor. Integer convallis sapien ac enim interdum blandit sed eget ipsum. Aenean nec bibendum lorem. Pellentesque dignissim mi a tincidunt pellentesque. Suspendisse at mauris eu nulla iaculis bibendum. Nunc eros nunc, rutrum dignissim erat vitae, pharetra tincidunt tellus. Proin quis nibh odio. Proin vestibulum turpis non egestas gravida. Vivamus tincidunt justo ut arcu gravida volutpat.",
 		program: "Taller de UX/UI",
-		offers: ["Sin descuento"],
+		offers: ["Marketing Digital para Redes Sociales"],
 		fee: "$30",
 	},
 };
