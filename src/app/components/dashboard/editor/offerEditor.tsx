@@ -26,6 +26,9 @@ export default function ContentForm() {
 
 	return (
 		<Box className="w-full max-w-5xl mx-auto p-4">
+			<h2 className="text-white text-3xl text-center mb-4 font-medium title-font">
+				Nueva oferta académica
+			</h2>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 				{/* LEFT: Image Upload */}
 				<div
@@ -137,9 +140,9 @@ export default function ContentForm() {
 						/>
 					</div>
 
-					{/* 🔥 Select (NEW) */}
+					{/* Formación */}
 					<div className="mb-4 w-full">
-						<FormControl sx={{ width: "100%" }} size="small">
+						<FormControl sx={{ width: "100%" }} size="medium">
 							<InputLabel id="formation-type-label">
 								Formación
 							</InputLabel>
@@ -168,7 +171,12 @@ export default function ContentForm() {
 							Información (PDF)
 						</Typography>
 
-						<Button variant="outlined" component="label" fullWidth>
+						<Button
+							variant="outlined"
+							component="label"
+							fullWidth
+							sx={{ height: "56px" }}
+						>
 							Cargar PDF
 							<input
 								type="file"
@@ -189,7 +197,7 @@ export default function ContentForm() {
 					</div>
 
 					{/* Submit */}
-					<Button variant="contained" className="w-full">
+					<Button variant="contained" fullWidth>
 						Guardar
 					</Button>
 				</div>

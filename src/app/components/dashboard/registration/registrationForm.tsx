@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { validationSchema } from "@/utils/validations";
+import { validationSchema } from "@/app/utils/validations";
 import { toFormikValidationSchema } from "zod-formik-adapter";
-import { Formik, Form } from "formik";
+import { Formik, Form, useFormikContext } from "formik";
 import { CloudUpload } from "@mui/icons-material";
 import {
 	Avatar,
@@ -12,20 +12,36 @@ import {
 	Box,
 	Typography,
 	FormControl,
+	FormControlLabel,
+	Checkbox,
 	InputLabel,
 	Select,
 	MenuItem,
 } from "@mui/material";
+
+import { Dayjs } from "dayjs";
+import dayjs from "dayjs";
+import { FormikDatePicker } from "@/app/components/dashboard/registration/FormikDatePicker";
 
 interface FormValues {
 	doc: string;
 	rif: string;
 	name: string;
 	lastname: string;
+	birthdate: Dayjs;
+	gender: string;
 	email: string;
 	phone: string;
-	highSchoolDiploma: File | null;
+	instagram: string;
+	address: string;
+	representativeDoc: string;
+	representativeName: string;
+	educationLevel: string;
 	universityDegree: File | null;
+	studiesInProgress: string;
+    company: string;
+    companyPosition: string;
+    companyAddress: string;
 }
 
 export default function RegistrationForm() {
@@ -83,6 +99,13 @@ export default function RegistrationForm() {
 	return (
 		<>
 			<div className="flex flex-col items-center">
+				<h2 className="text-white text-3xl text-center mb-1 font-medium title-font">
+					Inscríbete
+				</h2>
+				<p className="leading-relaxed text-gray-400 mb-4">
+					Se parte de la comunidad de Fundauneg
+				</p>
+
 				{/* Avatar */}
 				<div
 					className="relative cursor-pointer group"
@@ -166,10 +189,20 @@ export default function RegistrationForm() {
 					rif: "",
 					name: "",
 					lastname: "",
+					birthdate: dayjs(),
+					gender: "",
 					email: "",
 					phone: "",
-					highSchoolDiploma: null,
+					instagram: "",
+					address: "",
+					representativeDoc: "",
+					representativeName: "",
+					educationLevel: "",
 					universityDegree: null,
+					studiesInProgress: "",
+                    company: "",
+                    companyPosition: "",
+                    companyAddress: "",
 				}}
 				validationSchema={toFormikValidationSchema(validationSchema)}
 				onSubmit={handleSubmit}
@@ -194,6 +227,7 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
+										required
 										name="doc"
 										value={values.doc}
 										onChange={handleChange}
@@ -213,6 +247,7 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
+										required
 										name="rif"
 										value={values.rif}
 										onChange={handleChange}
@@ -232,6 +267,7 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
+										required
 										name="name"
 										value={values.name}
 										onChange={handleChange}
@@ -251,6 +287,7 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
+										required
 										name="lastname"
 										value={values.lastname}
 										onChange={handleChange}
@@ -266,6 +303,106 @@ export default function RegistrationForm() {
 									/>
 								</div>
 
+								{/* F. Nacimiento */}
+								<div className="mb-4">
+									<FormControl
+										fullWidth
+										sx={{
+											minHeight: 56,
+											backgroundColor: "#1f2937",
+										}}
+									>
+										<FormikDatePicker
+											name="birthdate"
+											label="F. Nacimiento"
+											format="DD/MM/YYYY"
+											slotProps={{
+												textField: {
+													required: true,
+													id: "birthdate",
+													size: "medium",
+												},
+											}}
+											sx={{ p: 0 }}
+										/>
+									</FormControl>
+								</div>
+
+								{/* Género */}
+								<div className="mb-4">
+									<Typography className="block text-left leading-7 text-sm text-gray-400 mb-1">
+										Género
+									</Typography>
+									<FormControl
+										fullWidth
+										required
+										id="gender"
+										sx={{ minHeight: 30 }}
+									>
+										<Box
+											sx={{
+												display: "flex",
+												justifyContent: "space-evenly",
+												alignItems: "center",
+												borderRadius: 1,
+												py: 0.5,
+												ml: 2,
+												height: "30px",
+											}}
+										>
+											<FormControlLabel
+												label={"Masc."}
+												sx={{
+													m: 0,
+													color: "#9ca3af",
+													alignContent: "center",
+												}}
+												control={
+													<Checkbox
+														size="small"
+														sx={{ p: "4px" }}
+														checked={
+															values.gender ===
+															"male"
+														}
+														onChange={() =>
+															setFieldValue(
+																"gender",
+																"male",
+															)
+														}
+													/>
+												}
+											/>
+
+											<FormControlLabel
+												label={"Fem."}
+												sx={{
+													m: 0,
+													color: "#9ca3af",
+													alignContent: "center",
+												}}
+												control={
+													<Checkbox
+														size="small"
+														sx={{ p: "4px" }}
+														checked={
+															values.gender ===
+															"female"
+														}
+														onChange={() =>
+															setFieldValue(
+																"gender",
+																"female",
+															)
+														}
+													/>
+												}
+											/>
+										</Box>
+									</FormControl>
+								</div>
+
 								{/* Email */}
 								<div className="sm:col-span-2 mb-4">
 									<Typography className="block text-left leading-7 text-sm text-gray-400 mb-1">
@@ -274,6 +411,7 @@ export default function RegistrationForm() {
 									<div className="sm:col-span-2">
 										<TextField
 											fullWidth
+											required
 											name="email"
 											type="email"
 											value={values.email}
@@ -292,13 +430,14 @@ export default function RegistrationForm() {
 								</div>
 
 								{/* Phone */}
-								<div className="sm:col-span-2 mb-4">
+								<div className=" mb-4">
 									<Typography className="block text-left leading-7 text-sm text-gray-400 mb-1">
 										Teléfono
 									</Typography>
 									<div className="sm:col-span-2">
 										<TextField
 											fullWidth
+											required
 											name="phone"
 											type="tel"
 											value={values.phone}
@@ -316,102 +455,145 @@ export default function RegistrationForm() {
 									</div>
 								</div>
 
-								<div className="mb-4">
-									<FormControl
-										sx={{ width: "100%" }}
-										size="small"
-									>
-										<InputLabel id="formation-type-label">
-											Formación
-										</InputLabel>
-										<Select
-											labelId="formation-type-label"
-											id="formation-type-select"
-											value={"Diplomado"}
-											label="formation"
+								{/* Instagram */}
+								<div className=" mb-4">
+									<Typography className="block text-left leading-7 text-sm text-gray-400 mb-1">
+										Instagram
+									</Typography>
+									<div className="sm:col-span-2">
+										<TextField
+											fullWidth
+											required
+											name="instagram"
+											value={values.instagram}
 											onChange={handleChange}
-										>
-											<MenuItem value={"Diplomado"}>
-												Diplomado
-											</MenuItem>
-											<MenuItem value={"Curso"}>
-												Curso
-											</MenuItem>
-											<MenuItem value={"Taller"}>
-												Taller
-											</MenuItem>
-										</Select>
-									</FormControl>
-								</div>
-
-								<div className="mb-4">
-									<FormControl
-										sx={{ width: "100%" }}
-										size="small"
-									>
-										<InputLabel id="offer-type-label">
-											Oferta
-										</InputLabel>
-										<Select
-											labelId="offer-type-label"
-											id="offer-type-select"
-											value={"Diplomado"}
-											label="offer"
-											onChange={handleChange}
-										>
-											<MenuItem value={"Diplomado"}>
-												Diplomado
-											</MenuItem>
-											<MenuItem value={"Curso"}>
-												Curso
-											</MenuItem>
-											<MenuItem value={"Taller"}>
-												Taller
-											</MenuItem>
-										</Select>
-									</FormControl>
-								</div>
-
-								{/* --- Upload: High School Diploma --- */}
-								<div className="mb-4">
-									<Button
-										startIcon={<CloudUpload />}
-										variant="outlined"
-										component="label"
-										fullWidth
-										disabled={isLoading || isSubmitting}
-									>
-										Subir Título de Bachiller
-										<input
-											type="file"
-											hidden
-											accept="image/*,.pdf"
-											onChange={(
-												event: React.ChangeEvent<HTMLInputElement>,
-											) => {
-												const file =
-													event.currentTarget
-														.files?.[0] || null;
-												setFieldValue(
-													"highSchoolDiploma",
-													file,
-												);
-											}}
+											onBlur={handleBlur}
+											error={
+												touched.instagram &&
+												Boolean(errors.instagram)
+											}
+											helperText={
+												touched.instagram &&
+												errors.instagram
+											}
+											variant="outlined"
 										/>
-									</Button>
+									</div>
+								</div>
 
-									{values.highSchoolDiploma && (
-										<Typography className="mt-1 text-sm">
-											{values.highSchoolDiploma?.name}
-										</Typography>
-									)}
+								{/* Dirección */}
+								<div className="sm:col-span-2 mb-4">
+									<Typography className="block text-left leading-7 text-sm text-gray-400 mb-1">
+										Dirección
+									</Typography>
+									<div className="sm:col-span-2">
+										<TextField
+											fullWidth
+											required
+											name="address"
+											value={values.address}
+											onChange={handleChange}
+											onBlur={handleBlur}
+											error={
+												touched.address &&
+												Boolean(errors.address)
+											}
+											helperText={
+												touched.address &&
+												errors.address
+											}
+											variant="outlined"
+										/>
+									</div>
+								</div>
 
-									{touched.highSchoolDiploma &&
-										errors.highSchoolDiploma && (
-											<Typography className="mt-1 text-sm text-red-500">
-												{errors.highSchoolDiploma}
-											</Typography>
-										)}
+								{/* Documento del Representante*/}
+								<div className="mb-4">
+									<Typography className="block text-left leading-7 text-sm text-gray-400 mb-1">
+										Documento del Representante (opcional)
+									</Typography>
+									<TextField
+										fullWidth
+										name="doc"
+										value={values.representativeDoc}
+										onChange={handleChange}
+										onBlur={handleBlur}
+										error={
+											touched.representativeDoc &&
+											Boolean(errors.representativeDoc)
+										}
+										helperText={
+											touched.representativeDoc &&
+											errors.representativeDoc
+										}
+										variant="outlined"
+									/>
+								</div>
+
+								{/* Nombre del representante */}
+								<div className="mb-4">
+									<Typography className="block text-left leading-7 text-sm text-gray-400 mb-1">
+										Nombre del Representante (opcional)
+									</Typography>
+									<TextField
+										fullWidth
+										name="name"
+										value={values.representativeName}
+										onChange={handleChange}
+										onBlur={handleBlur}
+										error={
+											touched.representativeName &&
+											Boolean(errors.representativeName)
+										}
+										helperText={
+											touched.representativeName &&
+											errors.representativeName
+										}
+										variant="outlined"
+									/>
+								</div>
+
+								<div className="mb-4">
+									<FormControl
+										sx={{ width: "100%" }}
+										size="medium"
+									>
+										<InputLabel id="education-level-type-label">
+											Grado de Instrucción
+										</InputLabel>
+
+										<Select
+											labelId="education-level-type-label"
+											id="formation-type-select"
+											value={values.educationLevel}
+											label="Grado de Instrucción"
+											onChange={handleChange}
+											onBlur={handleBlur}
+											error={
+												touched.educationLevel &&
+												Boolean(errors.educationLevel)
+											}
+										>
+											<MenuItem value={"primaria"}>
+												Primaria
+											</MenuItem>
+											<MenuItem value={"bachiller"}>
+												Bachiller
+											</MenuItem>
+											<MenuItem value={"tecnico_medio"}>
+												Tecnico Medio
+											</MenuItem>
+											<MenuItem value={"universitario"}>
+												Universitario
+											</MenuItem>
+											<MenuItem value={"postgrado"}>
+												Postgrado
+											</MenuItem>
+											<MenuItem value={"doctorado"}>
+												Doctorado
+											</MenuItem>
+										</Select>
+									</FormControl>
 								</div>
 
 								{/* --- Upload: University Degree --- */}
@@ -421,6 +603,7 @@ export default function RegistrationForm() {
 										variant="outlined"
 										component="label"
 										fullWidth
+										sx={{ height: "56px" }}
 									>
 										Subir Título Universitario
 										<input
@@ -453,6 +636,102 @@ export default function RegistrationForm() {
 												{errors.universityDegree}
 											</Typography>
 										)}
+								</div>
+
+								{/* Estudios en proceso */}
+								<div className="sm:col-span-2 mb-4">
+									<Typography className="text-sm text-gray-400 mb-1 text-left">
+										Estudios en Proceso (Especifique)
+									</Typography>
+
+									<TextField
+										fullWidth
+										multiline
+										rows={4}
+										name="studiesInProgress"
+										value={values.studiesInProgress}
+										onChange={handleChange}
+										onBlur={handleBlur}
+										error={
+											touched.studiesInProgress &&
+											Boolean(errors.studiesInProgress)
+										}
+										helperText={
+											touched.studiesInProgress &&
+											errors.studiesInProgress
+										}
+										variant="outlined"
+									/>
+								</div>
+
+								{/* Empresa */}
+								<div className="mb-4">
+									<Typography className="block text-left leading-7 text-sm text-gray-400 mb-1">
+										Empresa donde Labora
+									</Typography>
+									<TextField
+										fullWidth
+										required
+										name="doc"
+										value={values.company}
+										onChange={handleChange}
+										onBlur={handleBlur}
+										error={
+											touched.company &&
+											Boolean(errors.company)
+										}
+										helperText={
+											touched.company && errors.company
+										}
+										variant="outlined"
+									/>
+								</div>
+
+								{/* Cargo */}
+								<div className="mb-4">
+									<Typography className="block text-left leading-7 text-sm text-gray-400 mb-1">
+										Cargo que Desemepeña
+									</Typography>
+									<TextField
+										fullWidth
+										required
+										name="companyPosition"
+										value={values.companyPosition}
+										onChange={handleChange}
+										onBlur={handleBlur}
+										error={
+											touched.companyPosition &&
+											Boolean(errors.companyPosition)
+										}
+										helperText={touched.companyPosition && errors.companyPosition}
+										variant="outlined"
+									/>
+								</div>
+
+								{/* Dirección de la empresa*/}
+								<div className="sm:col-span-2 mb-4">
+									<Typography className="block text-left leading-7 text-sm text-gray-400 mb-1">
+										Dirección de la Empresa
+									</Typography>
+									<div className="sm:col-span-2">
+										<TextField
+											fullWidth
+											required
+											name="companyAddress"
+											value={values.companyAddress}
+											onChange={handleChange}
+											onBlur={handleBlur}
+											error={
+												touched.companyAddress &&
+												Boolean(errors.companyAddress)
+											}
+											helperText={
+												touched.companyAddress &&
+												errors.companyAddress
+											}
+											variant="outlined"
+										/>
+									</div>
 								</div>
 
 								{/* Submit */}

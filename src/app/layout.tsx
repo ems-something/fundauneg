@@ -9,7 +9,11 @@ import { headers } from "next/headers";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-const routesWithoutHeader = ["/home/enrollment", "/home/editor"];
+const routesWithoutHeader = [
+	"/home/enrollment",
+	"/home/editor",
+	"/home/registration",
+];
 
 export const metadata: Metadata = {
 	title: "Fundauneg",
