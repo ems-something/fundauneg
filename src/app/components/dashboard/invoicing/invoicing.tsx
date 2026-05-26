@@ -19,11 +19,13 @@ import { useEffect, useState, MouseEvent, ChangeEvent } from "react";
 import { useDebouncedCallback } from "use-debounce";
 
 import Search from "@/app/components/dashboard/Atoms/Search";
-//import { RootContainer } from "@/app/components/dashboard/Atoms/RootContainer";
 
-import AppModal from "@/app/components/dashboard/Modal/";
+import { CustomDatePicker } from "@/app/components/dashboard/Atoms/CustomDatePicker";
+import dayjs from "dayjs";
 
-import {
+//import AppModal from "@/app/components/dashboard/Modal/";
+
+/*import {
 	listInvoices,
 	listInvoiceStatusTypes,
 	listInvoicesSearchResults,
@@ -31,36 +33,41 @@ import {
 import { Invoice, SimpleOrg } from "@/app/api/models/invoicing";
 import { InvoicesResponse, InvoiceStatus } from "@/app/api/models/invoicing";
 import { listSimpleOrgs } from "@/app/api/actions/organizations";
-import { BasicOperationType } from "@/app/components/dashboard/Modal/Helper/interface";
+import { BasicOperationType } from "@/app/components/dashboard/Modal/Helper/interface";*/
 
 import { AddCircle, MoreHoriz } from "@mui/icons-material";
 
-export function InvoicingTable(props: any) {
+export default function InvoicingTable(props: any) {
 	const [filterOrgId, setFilterOrgId] = useState("");
 	const [filterStatusId, setFilterStatusId] = useState("");
 
 	const [pageNumber, setPageNumber] = useState(0);
 	const [numberResults, setNumberResults] = useState(25);
-	const [invoicesResponse, setInvoicesResponse] =
-		useState<InvoicesResponse | null>(null);
-	const [statusList, setStatusList] = useState<InvoiceStatus[]>([]);
-	const [orgsList, setOrgsList] = useState<SimpleOrg[]>([]);
+	const [invoicesResponse, setInvoicesResponse] = useState<
+		/*InvoicesResponse*/ string | null
+	>(null);
+	const [statusList, setStatusList] = useState</*InvoiceStatus*/ string[]>(
+		[],
+	);
+	const [orgsList, setOrgsList] = useState</*SimpleOrg*/ string[]>([]);
 
-	const [operation, setOperation] = useState<BasicOperationType>("");
+	const [operation, setOperation] =
+		useState</*BasicOperationType*/ string>("");
 	const [openModal, setOpenModal] = useState(false);
 	const [invoiceSelected, setInvoiceSelected] = useState<
-		Invoice | undefined
+		/*Invoice*/ string | undefined
 	>();
 	const [pageBeforeSearch, setPageBeforeSearch] = useState(0);
 	const [isSearching, setIsSearching] = useState(false);
 	const [searchTerm, setSearchTerm] = useState("");
+	const [dateSelected, setDateSelected] = useState<any>(dayjs());
 
 	/**
 	 * For the tables
 	 */
 	const columnNames = [
 		"ID",
-		"Empresa",
+		"Estudiante",
 		"Referencia",
 		"Total USD",
 		"Total VES",
@@ -72,7 +79,7 @@ export function InvoicingTable(props: any) {
 		"F. de Vencimiento",
 	];
 
-	async function getInvoices() {
+	/*async function getInvoices() {
 		let query = {
 			page_number: pageNumber + 1,
 			number_results: numberResults,
@@ -198,9 +205,9 @@ export function InvoicingTable(props: any) {
 		setOpenModal(true);
 		setOperation("Show");
 		setInvoiceSelected(invoice);
-	};
+	};*/
 
-	function RowActions({ invoice }: { invoice: Invoice }) {
+	function RowActions({ invoice }: { invoice: /*Invoice*/ string }) {
 		const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 		const open = Boolean(anchorEl);
 		const handleClick = (event: MouseEvent<HTMLElement>) => {
@@ -210,12 +217,12 @@ export function InvoicingTable(props: any) {
 
 		// Llamar directamente a las funciones existentes
 		const handleinvoiceDetail = async () => {
-			await invoiceDetail(invoice);
+			//await invoiceDetail(invoice);
 			handleClose();
 		};
 
 		const handlePrintDoc = () => {
-			invoiceDetail(invoice);
+			//invoiceDetail(invoice);
 			handleClose();
 		};
 
@@ -237,32 +244,43 @@ export function InvoicingTable(props: any) {
 
 	return (
 		<div className="relative px-4 pt-4 w-full grid grid-cols-1 gap-2">
+			<div className="flex justify-center items-center text-center mb-4">
+				<h2 className="text-white text-3xl font-medium title-font">
+					{"Facturación"}
+				</h2>
+			</div>
 			<div className="hidden md:flex items-center justify-between mb-4">
-				<div className="flex items-center gap-4">
-					<h1 className="text-left font-extrabold text-2xl lg:text-3xl">
-						{"Facturación"}
-					</h1>
+				<div className="w-1/2">
+					<Search
+						placeholder="Buscar factura..."
+						handleSearch={/*handleOnSearch*/ () => ""}
+					/>
 				</div>
-
-				<div className="flex items-center gap-4 w-2/3">
-					<div className="flex-1">
-						<Search
-							placeholder="Buscar factura..."
-							handleSearch={handleOnSearch}
+				<div className="flex items-center justify-end gap-4 w-1/2">
+					<div className="w-32 lg:w-48">
+						<CustomDatePicker
+							sx={{
+								minHeight: 40,
+								backgroundColor: "#1f2937",
+								color: "#9ca3af",
+							}}
+							useContainer={true}
+							dateSelected={dateSelected}
+							setDateSelected={setDateSelected}
 						/>
 					</div>
 					<FormControl
 						className="w-32 lg:w-48"
-						sx={{ backgroundColor: "white" }}
+						sx={{ backgroundColor: "bg-gray-900" }}
 						size="small"
 					>
-						<InputLabel id="org-label">Empresa</InputLabel>
+						<InputLabel id="org-label">Cohorte</InputLabel>
 						<Select
 							labelId="org-label"
 							id="org"
 							value={filterOrgId}
-							label="Empresa"
-							onChange={handleOrgChange}
+							label="Cohorte"
+							onChange={/*handleOrgChange*/ () => ""}
 						>
 							{orgsList.map((org: any, index: any) => (
 								<MenuItem
@@ -274,7 +292,7 @@ export function InvoicingTable(props: any) {
 					</FormControl>
 					<FormControl
 						className="w-32 lg:w-48"
-						sx={{ backgroundColor: "white" }}
+						sx={{ backgroundColor: "bg-gray-900" }}
 						size="small"
 					>
 						<InputLabel id="status-label">Estatus</InputLabel>
@@ -283,7 +301,7 @@ export function InvoicingTable(props: any) {
 							id="status"
 							value={filterStatusId}
 							label="Estatus"
-							onChange={handleStatusChange}
+							onChange={/*handleStatusChange*/ () => ""}
 						>
 							{statusList.map((status: any, index: any) => (
 								<MenuItem value={status.id} key={index}>
@@ -306,22 +324,29 @@ export function InvoicingTable(props: any) {
 				<div className="w-full">
 					<Search
 						placeholder="Buscar factura..."
-						handleSearch={handleOnSearch}
+						handleSearch={/*handleOnSearch*/ () => ""}
+					/>
+				</div>
+				<div className="w-full">
+					<CustomDatePicker
+						useContainer={true}
+						dateSelected={dateSelected}
+						setDateSelected={setDateSelected}
 					/>
 				</div>
 				<div className="w-full">
 					<FormControl
 						className="w-full"
-						sx={{ backgroundColor: "white" }}
+						sx={{ backgroundColor: "bg-gray-900" }}
 						size="small"
 					>
-						<InputLabel id="org-mobile-label">Empresa</InputLabel>
+						<InputLabel id="org-mobile-label">Cohorte</InputLabel>
 						<Select
 							labelId="org-mobile-label"
 							id="org-mobile"
 							value={filterOrgId}
-							label="Empresa"
-							onChange={handleOrgChange}
+							label="Cohorte"
+							onChange={/*handleOrgChange*/ () => ""}
 						>
 							{orgsList.map((org: any, index: any) => (
 								<MenuItem
@@ -335,7 +360,7 @@ export function InvoicingTable(props: any) {
 				<div className="w-full">
 					<FormControl
 						className="w-full"
-						sx={{ backgroundColor: "white" }}
+						sx={{ backgroundColor: "bg-gray-900" }}
 						size="small"
 					>
 						<InputLabel id="status-mobile-label">
@@ -346,7 +371,7 @@ export function InvoicingTable(props: any) {
 							id="status-mobile"
 							value={filterStatusId}
 							label="Estatus"
-							onChange={handleStatusChange}
+							onChange={/*handleStatusChange*/ () => ""}
 						>
 							{statusList.map((status: any, index: any) => (
 								<MenuItem value={status.id} key={index}>
@@ -360,10 +385,10 @@ export function InvoicingTable(props: any) {
 
 			<DataTable
 				columns={columnNames}
-				rows={invoicesResponse ? invoicesResponse.invoices : []}
+				rows={invoicesResponse ? /*invoicesResponse.invoices*/ [] : []}
 				ariaLabel="Tabla de Compras y Gastos"
 				renderRow={(
-					invoice: Invoice,
+					invoice: /*Invoice*/ any,
 					_index: number,
 					colWidths: number[],
 				) => (
@@ -378,7 +403,7 @@ export function InvoicingTable(props: any) {
 								minWidth: "200px",
 							}}
 						>
-							{getOrgById(invoice.organization_id)}
+							{/*getOrgById(invoice.organization_id)*/ ""}
 						</TableBodyCell>
 						<TableBodyCell cellType="data" colWidth={colWidths[2]}>
 							{invoice.ref ?? "-"}
@@ -443,7 +468,7 @@ export function InvoicingTable(props: any) {
 											: "",
 							}}
 						>
-							{getStatusById(invoice.status_id)}
+							{/*getStatusById(invoice.status_id)*/ ""}
 						</TableBodyCell>
 						<TableBodyCell cellType="data" colWidth={colWidths[9]}>
 							{invoice.payment_date
@@ -460,17 +485,19 @@ export function InvoicingTable(props: any) {
 			/>
 
 			<DataTablePagination
-				onPageChange={handleChangePage}
+				onPageChange={/*handleChangePage*/ () => ""}
 				rowsPerPageOptions={[5, 25, 50]}
 				rowsPerPage={numberResults}
 				labelRowsPerPage=""
-				onRowsPerPageChange={handleChangeRowsPerPage}
-				count={invoicesResponse ? invoicesResponse.total_count : 0}
+				onRowsPerPageChange={/*handleChangeRowsPerPage*/ () => ""}
+				count={
+					invoicesResponse ? /*invoicesResponse.total_count*/ 0 : 0
+				}
 				page={pageNumber}
 			/>
 
 			<div className="absolute bottom-4 left-5">
-				{operation && (
+				{/*operation && (
 					<AppModal
 						invoice={invoiceSelected}
 						modalViewContent="Invoices"
@@ -482,7 +509,7 @@ export function InvoicingTable(props: any) {
 							setOpenModal(false);
 						}}
 					/>
-				)}
+				)*/}
 			</div>
 		</div>
 	);

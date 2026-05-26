@@ -17,35 +17,89 @@ import {
 const mockData = {
 	Diplomado: {
 		image: "/images/content/graduates/programacion_web.jpg",
-		description:
-			" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis ipsum a mattis fermentum. Nam sed urna quis augue iaculis dignissim. Sed sed egestas nisi, eget viverra arcu. Praesent euismod id diam id bibendum. Vestibulum sodales in metus non tempor. Sed fermentum elit a nisl congue, vel vestibulum metus sollicitudin. In auctor commodo dui, pharetra tincidunt nibh cursus sed. Nulla sed rhoncus erat. Proin pretium vehicula pellentesque. Donec pellentesque a dui et molestie. Curabitur erat ante, scelerisque sit amet volutpat non, venenatis a lacus. Suspendisse ut ultrices ex, sed vehicula purus. Vestibulum ultrices luctus diam, in iaculis enim commodo at.Nam nec tortor egestas, pharetra sem quis, venenatis nisi. Nulla id tristique urna. Aliquam viverra fringilla malesuada. Etiam ex mauris, elementum eu venenatis interdum, ullamcorper a lectus. Nunc erat massa, ultricies sed lobortis nec, maximus in quam. Phasellus nec purus tortor. Integer convallis sapien ac enim interdum blandit sed eget ipsum. Aenean nec bibendum lorem. Pellentesque dignissim mi a tincidunt pellentesque. Suspendisse at mauris eu nulla iaculis bibendum. Nunc eros nunc, rutrum dignissim erat vitae, pharetra tincidunt tellus. Proin quis nibh odio. Proin vestibulum turpis non egestas gravida. Vivamus tincidunt justo ut arcu gravida volutpat. Phasellus bibendum suscipit dolor consequat auctor. Nunc dignissim libero interdum arcu eleifend, id auctor quam pretium.",
+		description: `Se busca ofrecer los conocimientos y herramientas necesarias para realizar una valoración especializada del estado de los órganos del cuerpo humano con fin diagnóstico y terapéutico. Asimismo aportar las herramientas para desempeñarse exitosamente como médico ecografista.
+            
+            Contenido Programático:
+            
+            * Física y Fundamentos Básicos de Ultrasonidos.
+            * Técnicas de Exploración
+            * Estudio de la Imagen Ecografía, Relación con la Tomografía y Resonancia Magnética.
+            * Fundamentos de Anatomía.
+            * Nociones Básicas de Pequeñas Partes: Mamas, Tiroides y Testículo.
+            * Ecografía Abdominal: Normal  Patología.Benigna y Maligna.
+            * El Retroperitoneo.Normal.Patología a Benigna y Maligna.
+            * Ecografía Pélvica Femenina y Masculina.`,
 		program: "Diplomado en Tecnología",
 		offers: [
 			"Ecografía Abdominal",
 			"Formación Docente",
 			"Programación Web",
 		],
-		fee: "$100",
+		preRegistrationFee: "50$",
+		registrationFee: "100$",
+		investment: "300$",
+		installments: "3",
+		duration: "196 h (3 Meses) ",
+		facilitator: "Dr. Eddy Cañas",
+		addressedTo: "Médicos generales y especializados",
+		schedule: "Viernes de 1:00 pm a 5:00 pm / Sábado de 8:00 am a 4:00 pm",
+		requirements: "Planilla de Inscripción, Copia de la C.I y RIF",
 	},
 	Curso: {
 		image: "/images/content/courses/como_generar_ingreso_en_mercados_financiero.jpg",
-		description:
-			" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis ipsum a mattis fermentum. Nam sed urna quis augue iaculis dignissim. Sed sed egestas nisi, eget viverra arcu. Praesent euismod id diam id bibendum. Vestibulum sodales in metus non tempor. Sed fermentum elit a nisl congue, vel vestibulum metus sollicitudin. In auctor commodo dui, pharetra tincidunt nibh cursus sed. Nulla sed rhoncus erat. Proin pretium vehicula pellentesque. Donec pellentesque a dui et molestie. Curabitur erat ante, scelerisque sit amet volutpat non, venenatis a lacus. Suspendisse ut ultrices ex, sed vehicula purus. Vestibulum ultrices luctus diam, in iaculis enim commodo at. Nam nec tortor egestas, pharetra sem quis, venenatis nisi. Nulla id tristique urna. Aliquam viverra fringilla malesuada. Etiam ex mauris, elementum eu venenatis interdum, ullamcorper a lectus. Nunc erat massa, ultricies sed lobortis nec, maximus in quam. Phasellus nec purus tortor. Integer convallis sapien ac enim interdum blandit sed eget ipsum. Aenean nec bibendum lorem. Pellentesque dignissim mi a tincidunt pellentesque.",
+		description: `Se busca ofrecer los conocimientos y herramientas necesarias para realizar una valoración especializada del estado de los órganos del cuerpo humano con fin diagnóstico y terapéutico. Asimismo aportar las herramientas para desempeñarse exitosamente como médico ecografista.
+            
+            Contenido Programático:
+            
+            * Física y Fundamentos Básicos de Ultrasonidos.
+            * Técnicas de Exploración
+            * Estudio de la Imagen Ecografía, Relación con la Tomografía y Resonancia Magnética.
+            * Fundamentos de Anatomía.
+            * Nociones Básicas de Pequeñas Partes: Mamas, Tiroides y Testículo.
+            * Ecografía Abdominal: Normal  Patología.Benigna y Maligna.
+            * El Retroperitoneo.Normal.Patología a Benigna y Maligna.
+            * Ecografía Pélvica Femenina y Masculina.`,
 		program: "Curso de Desarrollo Web",
 		offers: [
 			"Asistente Administrativo",
 			"Atención al Cliente",
 			"Cómo Generar Ingreso en Mercados Financiero",
 		],
-		fee: "$50",
+		preRegistrationFee: "50$",
+		registrationFee: "100$",
+		investment: "200$",
+		installments: "4",
+		duration: "196 h (3 Meses) ",
+		facilitator: "Dr. Eddy Cañas",
+		addressedTo: "Médicos generales y especializados",
+		schedule: "Viernes de 1:00 pm a 5:00 pm / Sábado de 8:00 am a 4:00 pm",
+		requirements: "Planilla de Inscripción, Copia de la C.I y RIF",
 	},
 	Taller: {
 		image: "/images/content/workshops/marketing_digital_para_redes_sociales.jpg",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis ipsum a mattis fermentum. Nam sed urna quis augue iaculis dignissim. Sed sed egestas nisi, eget viverra arcu. Praesent euismod id diam id bibendum. Vestibulum sodales in metus non tempor. Sed fermentum elit a nisl congue, vel vestibulum metus sollicitudin. In auctor commodo dui, pharetra tincidunt nibh cursus sed. Nulla sed rhoncus erat. Proin pretium vehicula pellentesque. Donec pellentesque a dui et molestie. Curabitur erat ante, scelerisque sit amet volutpat non, venenatis a lacus. Suspendisse ut ultrices ex, sed vehicula purus. Vestibulum ultrices luctus diam, in iaculis enim commodo at. Nam nec tortor egestas, pharetra sem quis, venenatis nisi. Nulla id tristique urna. Aliquam viverra fringilla malesuada. Etiam ex mauris, elementum eu venenatis interdum, ullamcorper a lectus. Nunc erat massa, ultricies sed lobortis nec, maximus in quam. Phasellus nec purus tortor. Integer convallis sapien ac enim interdum blandit sed eget ipsum. Aenean nec bibendum lorem. Pellentesque dignissim mi a tincidunt pellentesque. Suspendisse at mauris eu nulla iaculis bibendum. Nunc eros nunc, rutrum dignissim erat vitae, pharetra tincidunt tellus. Proin quis nibh odio. Proin vestibulum turpis non egestas gravida. Vivamus tincidunt justo ut arcu gravida volutpat.",
+		description: `Se busca ofrecer los conocimientos y herramientas necesarias para realizar una valoración especializada del estado de los órganos del cuerpo humano con fin diagnóstico y terapéutico. Asimismo aportar las herramientas para desempeñarse exitosamente como médico ecografista.
+            
+            Contenido Programático:
+            
+            * Física y Fundamentos Básicos de Ultrasonidos.
+            * Técnicas de Exploración
+            * Estudio de la Imagen Ecografía, Relación con la Tomografía y Resonancia Magnética.
+            * Fundamentos de Anatomía.
+            * Nociones Básicas de Pequeñas Partes: Mamas, Tiroides y Testículo.
+            * Ecografía Abdominal: Normal  Patología.Benigna y Maligna.
+            * El Retroperitoneo.Normal.Patología a Benigna y Maligna.
+            * Ecografía Pélvica Femenina y Masculina.`,
 		program: "Taller de UX/UI",
 		offers: ["Marketing Digital para Redes Sociales"],
-		fee: "$30",
+		preRegistrationFee: "15$",
+		registrationFee: "30$",
+		investment: "60$",
+		installments: "2",
+		duration: "196 h (3 Meses) ",
+		facilitator: "Dr. Eddy Cañas",
+		addressedTo: "Médicos generales y especializados",
+		schedule: "Viernes de 1:00 pm a 5:00 pm / Sábado de 8:00 am a 4:00 pm",
+		requirements: "Planilla de Inscripción, Copia de la C.I y RIF",
 	},
 };
 
@@ -54,8 +108,9 @@ export default function EnrollmentView() {
 	const [offer, setOffer] = useState("");
 	const [studyMode, setStudyMode] = useState("");
 	const [academicCohort, setAcademicCohort] = useState("");
-	const [voucherType, setVoucherType] = useState("");
 	const [voucher, setVoucher] = useState("");
+	const [paymentType, setPaymentType] = useState("");
+	const [paymentMethod, setPaymentMethod] = useState("");
 	const [paymentFormat, setPaymentFormat] = useState("");
 
 	const selected = mockData[formation as keyof typeof mockData];
@@ -72,14 +127,21 @@ export default function EnrollmentView() {
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 				{/* LEFT SIDE */}
-				<div className="flex flex-col">
+				<div className="flex flex-col w-full">
 					{/* Image */}
-					<div className="w-full h-[312px] mb-4">
+					<div className="flex-1 mb-4">
 						<img
 							src={selected.image}
 							alt="program"
 							className="w-full h-full object-cover rounded-md"
 						/>
+					</div>
+
+					{/* Description */}
+					<div className="flex-1 mb-4">
+						<Typography className="text-gray-300 text-sm text-justify whitespace-pre-line">
+							{selected.description}
+						</Typography>
 					</div>
 				</div>
 
@@ -168,9 +230,31 @@ export default function EnrollmentView() {
 						</div>
 					</div>
 
+					{/* Coordinador */}
+					<div className="mb-4 w-full">
+						<Typography className="block text-sm text-gray-400 mb-1 self-center">
+							Facilitador
+						</Typography>
+
+						<div className="w-full bg-gray-800 border border-gray-700 rounded px-3 py-2 text-gray-300">
+							{selected.facilitator}
+						</div>
+					</div>
+
+					{/* Dirigido a */}
+					<div className="mb-4 w-full">
+						<Typography className="block text-sm text-gray-400 mb-1 self-center">
+							Dirigido a
+						</Typography>
+
+						<div className="w-full bg-gray-800 border border-gray-700 rounded px-3 py-2 text-gray-300">
+							{selected.addressedTo}
+						</div>
+					</div>
+
 					{/* Voucher + Type */}
 					<div className="mb-4 w-full flex gap-2">
-						<div className="flex-[2]">
+						<div className="flex-1">
 							<Typography className="block text-sm text-gray-400 mb-1 self-center">
 								Referencia de Pago
 							</Typography>
@@ -200,15 +284,39 @@ export default function EnrollmentView() {
 
 						<div className="flex-1">
 							<Typography className="block text-sm text-gray-400 mb-1 self-center">
+								Forma de Pago
+							</Typography>
+							<FormControl size="small" fullWidth>
+								<InputLabel>Forma de pago</InputLabel>
+								<Select
+									value={paymentMethod}
+									label="Forma de pago"
+									onChange={(e) =>
+										setPaymentMethod(e.target.value)
+									}
+								>
+									<MenuItem value="transfer">
+										Transferencia
+									</MenuItem>
+									<MenuItem value="usd">Divisas</MenuItem>
+									<MenuItem value="cash">
+										Efectivo Bs
+									</MenuItem>
+								</Select>
+							</FormControl>
+						</div>
+
+						<div className="flex-1">
+							<Typography className="block text-sm text-gray-400 mb-1 self-center">
 								Tipo de Pago
 							</Typography>
 							<FormControl size="small" fullWidth>
 								<InputLabel>Tipo</InputLabel>
 								<Select
-									value={voucherType}
+									value={paymentType}
 									label="Tipo"
 									onChange={(e) =>
-										setVoucherType(e.target.value)
+										setPaymentType(e.target.value)
 									}
 								>
 									<MenuItem value="pre">
@@ -223,14 +331,25 @@ export default function EnrollmentView() {
 					</div>
 
 					<div className="mb-4 w-full flex gap-2">
-						{/* Fee */}
-						<div className="flex-[2]">
+						{/* N° de Cuotas */}
+						<div className="flex-1">
 							<Typography className="block text-sm text-gray-400 mb-1 self-center">
-								Monto a Cancelar
+								N° de Cuotas
 							</Typography>
 
 							<div className="w-full bg-gray-800 border border-gray-700 rounded px-3 py-2 text-gray-300">
-								{selected.fee}
+								{selected.installments}
+							</div>
+						</div>
+
+						{/* Inversión Total */}
+						<div className="flex-1">
+							<Typography className="block text-sm text-gray-400 mb-1 self-center">
+								Inversión Total
+							</Typography>
+
+							<div className="w-full bg-gray-800 border border-gray-700 rounded px-3 py-2 text-gray-300">
+								{selected.investment}
 							</div>
 						</div>
 
@@ -301,6 +420,53 @@ export default function EnrollmentView() {
 						</div>
 					</div>
 
+					<div className="mb-4 w-full flex gap-2">
+						{/* Monto a Cancelar */}
+						<div className="flex-1">
+							<Typography className="block text-sm text-gray-400 mb-1 self-center">
+								Monto a Cancelar
+							</Typography>
+
+							<div className="w-full bg-gray-800 border border-gray-700 rounded px-3 py-2 text-gray-300">
+								{paymentType === "pre"
+									? selected.preRegistrationFee
+									: selected.registrationFee}
+							</div>
+						</div>
+
+						<div className="flex-1">
+							<Typography className="block text-sm text-gray-400 mb-1 self-center">
+								Duración
+							</Typography>
+
+							<div className="w-full bg-gray-800 border border-gray-700 rounded px-3 py-2 text-gray-300">
+								{selected.duration}
+							</div>
+						</div>
+					</div>
+
+					{/* Horario */}
+					<div className="mb-4 w-full">
+						<Typography className="block text-sm text-gray-400 mb-1 self-center">
+							Horario
+						</Typography>
+
+						<div className="w-full bg-gray-800 border border-gray-700 rounded px-3 py-2 text-gray-300">
+							{selected.schedule}
+						</div>
+					</div>
+
+					{/* Requisitos */}
+					<div className="mb-4 w-full">
+						<Typography className="block text-sm text-gray-400 mb-1 self-center">
+							Requisitos Obligatorios
+						</Typography>
+
+						<div className="w-full bg-gray-800 border border-gray-700 rounded px-3 py-2 text-gray-300">
+							{selected.requirements}
+						</div>
+					</div>
+
 					{/* Submit */}
 
 					<Button variant="contained" className="w-full">
@@ -308,11 +474,6 @@ export default function EnrollmentView() {
 					</Button>
 				</div>
 			</div>
-			{/* Description */}
-
-			<Typography className="text-gray-300 text-sm text-justify">
-				{selected.description}
-			</Typography>
 		</Box>
 	);
 }

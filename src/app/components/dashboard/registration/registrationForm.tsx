@@ -39,9 +39,9 @@ interface FormValues {
 	educationLevel: string;
 	universityDegree: File | null;
 	studiesInProgress: string;
-    company: string;
-    companyPosition: string;
-    companyAddress: string;
+	company: string;
+	companyPosition: string;
+	companyAddress: string;
 }
 
 export default function RegistrationForm() {
@@ -200,9 +200,9 @@ export default function RegistrationForm() {
 					educationLevel: "",
 					universityDegree: null,
 					studiesInProgress: "",
-                    company: "",
-                    companyPosition: "",
-                    companyAddress: "",
+					company: "",
+					companyPosition: "",
+					companyAddress: "",
 				}}
 				validationSchema={toFormikValidationSchema(validationSchema)}
 				onSubmit={handleSubmit}
@@ -227,6 +227,7 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
+										size="small"
 										required
 										name="doc"
 										value={values.doc}
@@ -247,6 +248,7 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
+										size="small"
 										required
 										name="rif"
 										value={values.rif}
@@ -267,6 +269,7 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
+										size="small"
 										required
 										name="name"
 										value={values.name}
@@ -287,6 +290,7 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
+										size="small"
 										required
 										name="lastname"
 										value={values.lastname}
@@ -308,7 +312,7 @@ export default function RegistrationForm() {
 									<FormControl
 										fullWidth
 										sx={{
-											minHeight: 56,
+											minHeight: 40,
 											backgroundColor: "#1f2937",
 										}}
 									>
@@ -320,24 +324,24 @@ export default function RegistrationForm() {
 												textField: {
 													required: true,
 													id: "birthdate",
-													size: "medium",
+													size: "small",
 												},
 											}}
-											sx={{ p: 0 }}
+											sx={{ p: 0, color: "#9ca3af" }}
 										/>
 									</FormControl>
 								</div>
 
 								{/* Género */}
 								<div className="mb-4">
-									<Typography className="block text-left leading-7 text-sm text-gray-400 mb-1">
+									<Typography className="block h-4 text-left leading-7 text-sm text-gray-400">
 										Género
 									</Typography>
 									<FormControl
 										fullWidth
 										required
 										id="gender"
-										sx={{ minHeight: 30 }}
+										sx={{ minHeight: 16 }}
 									>
 										<Box
 											sx={{
@@ -345,9 +349,8 @@ export default function RegistrationForm() {
 												justifyContent: "space-evenly",
 												alignItems: "center",
 												borderRadius: 1,
-												py: 0.5,
 												ml: 2,
-												height: "30px",
+												height: "16px",
 											}}
 										>
 											<FormControlLabel
@@ -411,6 +414,7 @@ export default function RegistrationForm() {
 									<div className="sm:col-span-2">
 										<TextField
 											fullWidth
+											size="small"
 											required
 											name="email"
 											type="email"
@@ -437,6 +441,7 @@ export default function RegistrationForm() {
 									<div className="sm:col-span-2">
 										<TextField
 											fullWidth
+											size="small"
 											required
 											name="phone"
 											type="tel"
@@ -463,6 +468,7 @@ export default function RegistrationForm() {
 									<div className="sm:col-span-2">
 										<TextField
 											fullWidth
+											size="small"
 											required
 											name="instagram"
 											value={values.instagram}
@@ -489,6 +495,7 @@ export default function RegistrationForm() {
 									<div className="sm:col-span-2">
 										<TextField
 											fullWidth
+											size="small"
 											required
 											name="address"
 											value={values.address}
@@ -514,6 +521,7 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
+										size="small"
 										name="doc"
 										value={values.representativeDoc}
 										onChange={handleChange}
@@ -537,7 +545,8 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
-										name="name"
+										size="small"
+										name="representativeName"
 										value={values.representativeName}
 										onChange={handleChange}
 										onBlur={handleBlur}
@@ -556,7 +565,7 @@ export default function RegistrationForm() {
 								<div className="mb-4">
 									<FormControl
 										sx={{ width: "100%" }}
-										size="medium"
+										size="small"
 									>
 										<InputLabel id="education-level-type-label">
 											Grado de Instrucción
@@ -603,7 +612,7 @@ export default function RegistrationForm() {
 										variant="outlined"
 										component="label"
 										fullWidth
-										sx={{ height: "56px" }}
+										sx={{ height: "40px" }}
 									>
 										Subir Título Universitario
 										<input
@@ -646,8 +655,7 @@ export default function RegistrationForm() {
 
 									<TextField
 										fullWidth
-										multiline
-										rows={4}
+										size="small"
 										name="studiesInProgress"
 										value={values.studiesInProgress}
 										onChange={handleChange}
@@ -671,6 +679,7 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
+										size="small"
 										required
 										name="doc"
 										value={values.company}
@@ -694,6 +703,7 @@ export default function RegistrationForm() {
 									</Typography>
 									<TextField
 										fullWidth
+										size="small"
 										required
 										name="companyPosition"
 										value={values.companyPosition}
@@ -703,7 +713,10 @@ export default function RegistrationForm() {
 											touched.companyPosition &&
 											Boolean(errors.companyPosition)
 										}
-										helperText={touched.companyPosition && errors.companyPosition}
+										helperText={
+											touched.companyPosition &&
+											errors.companyPosition
+										}
 										variant="outlined"
 									/>
 								</div>
@@ -716,6 +729,7 @@ export default function RegistrationForm() {
 									<div className="sm:col-span-2">
 										<TextField
 											fullWidth
+											size="small"
 											required
 											name="companyAddress"
 											value={values.companyAddress}

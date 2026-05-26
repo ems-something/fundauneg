@@ -78,7 +78,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 				className={`hidden max-[425px]:hidden min-[426px]:max-[767px]:hidden min-[768px]:flex h-12 inline-flex justify-center items-center gap-8 overflow-hidden mt-4 ${className || ""}`}
 			>
 				<div className="px-2 rounded-full flex justify-start items-center gap-2 overflow-hidden">
-					<div className="w-10 h-10 relative bg-purple-700 rounded-full overflow-hidden flex items-center justify-center">
+					<div className="w-10 h-10 relative bg-white rounded-full overflow-hidden flex items-center justify-center">
 						<span>
 							<IconButton
 								onClick={(e) => onPageChange(e, page - 1)}
@@ -90,7 +90,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 								}`}
 							>
 								<NavigateBefore
-									className={`text-gray-200 ${isFirstPage ? "opacity-40" : ""}`}
+									className={`text-gray-500 ${isFirstPage ? "opacity-40" : ""}`}
 								/>
 							</IconButton>
 						</span>
@@ -146,7 +146,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 							})}
 						</div>
 					)}
-					<div className="w-10 h-10 relative bg-purple-700 rounded-full overflow-hidden flex items-center justify-center">
+					<div className="w-10 h-10 relative bg-white rounded-full overflow-hidden flex items-center justify-center">
 						<span>
 							<IconButton
 								onClick={(e) => onPageChange(e, page + 1)}
@@ -158,7 +158,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 								}`}
 							>
 								<NavigateNext
-									className={`text-gray-200 ${isLastPage ? "opacity-40" : ""}`}
+									className={`text-gray-500 ${isLastPage ? "opacity-40" : ""}`}
 								/>
 							</IconButton>
 						</span>
@@ -186,7 +186,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 				className={`hidden max-[425px]:hidden min-[426px]:max-[767px]:flex min-[768px]:hidden h-8 max-[600px]:h-7 inline-flex justify-center items-center gap-4 max-[600px]:gap-2 overflow-hidden mt-3 ${className || ""}`}
 			>
 				<div className="px-2 rounded-full flex justify-start items-center gap-1.5 overflow-hidden">
-					<div className="w-7 h-7 max-[600px]:w-6 max-[600px]:h-6 relative bg-purple-700 rounded-full overflow-hidden flex items-center justify-center">
+					<div className="w-7 h-7 max-[600px]:w-6 max-[600px]:h-6 relative bg-white rounded-full overflow-hidden flex items-center justify-center">
 						<span>
 							<IconButton
 								onClick={(e) => onPageChange(e, page - 1)}
@@ -199,7 +199,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 								size="small"
 							>
 								<NavigateBefore
-									className={`text-gray-200 text-xs max-[600px]:text-[10px] ${isFirstPage ? "opacity-40" : ""}`}
+									className={`text-gray-500 text-xs max-[600px]:text-[10px] ${isFirstPage ? "opacity-40" : ""}`}
 								/>
 							</IconButton>
 						</span>
@@ -255,7 +255,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 							})}
 						</div>
 					)}
-					<div className="w-7 h-7 max-[600px]:w-6 max-[600px]:h-6 relative bg-purple-700 rounded-full overflow-hidden flex items-center justify-center">
+					<div className="w-7 h-7 max-[600px]:w-6 max-[600px]:h-6 relative bg-white rounded-full overflow-hidden flex items-center justify-center">
 						<span>
 							<IconButton
 								onClick={(e) => onPageChange(e, page + 1)}
@@ -268,7 +268,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 								size="small"
 							>
 								<NavigateNext
-									className={`text-gray-200 text-xs max-[600px]:text-[10px] ${isLastPage ? "opacity-40" : ""}`}
+									className={`text-gray-500 text-xs max-[600px]:text-[10px] ${isLastPage ? "opacity-40" : ""}`}
 								/>
 							</IconButton>
 						</span>
@@ -298,7 +298,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 				{modalMode ? (
 					<div className="flex justify-center items-center gap-2 sm:gap-3 overflow-hidden">
 						<div className="px-0.5 rounded-full flex justify-start items-center gap-0.5 overflow-hidden">
-							<div className="w-5 h-5 sm:w-6 sm:h-6 relative bg-purple-700 rounded-full overflow-hidden flex items-center justify-center">
+							<div className="w-5 h-5 sm:w-6 sm:h-6 relative bg-white rounded-full overflow-hidden flex items-center justify-center">
 								<span>
 									<IconButton
 										onClick={(e) =>
@@ -313,7 +313,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 										size="small"
 									>
 										<NavigateBefore
-											className={`text-gray-200 text-xs ${isFirstPage ? "opacity-40" : ""}`}
+											className={`text-gray-500 text-xs ${isFirstPage ? "opacity-40" : ""}`}
 										/>
 									</IconButton>
 								</span>
@@ -323,7 +323,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 									{page + 1}
 								</span>
 							</div>
-							<div className="w-5 h-5 sm:w-6 sm:h-6 relative bg-purple-700 rounded-full overflow-hidden flex items-center justify-center">
+							<div className="w-5 h-5 sm:w-6 sm:h-6 relative bg-white rounded-full overflow-hidden flex items-center justify-center">
 								<span>
 									<IconButton
 										onClick={(e) =>
@@ -338,7 +338,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 										size="small"
 									>
 										<NavigateNext
-											className={`text-gray-200 text-xs ${isLastPage ? "opacity-40" : ""}`}
+											className={`text-gray-500 text-xs ${isLastPage ? "opacity-40" : ""}`}
 										/>
 									</IconButton>
 								</span>
@@ -367,7 +367,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 					<>
 						<div className="flex justify-center items-center">
 							<div className="px-2 rounded-full flex justify-start items-center gap-2 overflow-hidden">
-								<div className="w-10 h-10 relative bg-purple-700 rounded-full overflow-hidden flex items-center justify-center">
+								<div className="w-10 h-10 relative bg-white rounded-full overflow-hidden flex items-center justify-center">
 									<span>
 										<IconButton
 											onClick={(e) =>
@@ -381,7 +381,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 											}`}
 										>
 											<NavigateBefore
-												className={`text-gray-200 ${isFirstPage ? "opacity-40" : ""}`}
+												className={`text-gray-500 ${isFirstPage ? "opacity-40" : ""}`}
 											/>
 										</IconButton>
 									</span>
@@ -431,7 +431,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 										);
 									})}
 								</div>
-								<div className="w-10 h-10 relative bg-purple-700 rounded-full overflow-hidden flex items-center justify-center">
+								<div className="w-10 h-10 relative bg-white rounded-full overflow-hidden flex items-center justify-center">
 									<span>
 										<IconButton
 											onClick={(e) =>
@@ -445,7 +445,7 @@ export const DataTablePagination: FunctionComponent<Props> = ({
 											}`}
 										>
 											<NavigateNext
-												className={`text-gray-200 ${isLastPage ? "opacity-40" : ""}`}
+												className={`text-gray-500 ${isLastPage ? "opacity-40" : ""}`}
 											/>
 										</IconButton>
 									</span>

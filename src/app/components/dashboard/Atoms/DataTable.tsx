@@ -75,7 +75,7 @@ export function DataTable({
 
 	if (!useModernDesign) {
 		return (
-			<div className={`rounded-[10px] bg-white ${className}`}>
+			<div className={`rounded-[10px] bg-gray-900 ${className}`}>
 				<Paper>
 					<TableContainer
 						component={Paper}
@@ -118,7 +118,7 @@ export function DataTable({
 
 	return (
 		<div
-			className={`rounded-xl outline outline-1 outline-gray-500/70 bg-white w-full overflow-hidden ${height} flex flex-col ${className}`}
+			className={`rounded-xl outline outline-1 outline-gray-500/70 bg-gray-900 w-full overflow-hidden ${height} flex flex-col ${className}`}
 		>
 			{showHeader && (title || icon) && (
 				<div className="border-b border-gray-200 py-2 sm:py-3 px-2 sm:px-4 flex items-center justify-center gap-1 sm:gap-2">
@@ -151,9 +151,9 @@ export function DataTable({
 							},
 						},
 						"& .MuiTableCell-head": {
-							color: "#646464",
-							backgroundColor: "#fafafa",
-							borderBottom: "1px solid #e0e0e0",
+							color: "#9ca3af",
+							backgroundColor: "#111827",
+							borderBottom: "1px solid #374151",
 							fontSize: "14px",
 							height: "45px",
 							fontWeight: "bold",

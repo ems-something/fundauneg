@@ -16,11 +16,12 @@ const Search: FunctionComponent<Props> = ({ placeholder, handleSearch }) => {
 		<div className="rounded-[10px] relative flex flex-1 flex-shrink-0">
 			<FormControl
 				fullWidth
-				className="w-full rounded-md !bg-white text-sm placeholder:text-gray-500"
+				className="w-full rounded-md !bg-gray-900 text-sm placeholder:text-gray-500"
 			>
 				<TextField
 					placeholder={placeholder}
 					onChange={handleSearch}
+					size="small"
 					slotProps={{
 						input: {
 							startAdornment: (

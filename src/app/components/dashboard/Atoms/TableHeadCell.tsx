@@ -7,7 +7,7 @@ import {
 	useState,
 	FunctionComponent,
 	ReactNode,
-	MouseEvent as ReactMouseEvent
+	MouseEvent as ReactMouseEvent,
 } from "react";
 
 type Props = {
@@ -57,6 +57,7 @@ export const TableHeadCell: FunctionComponent<Props> = ({
 			className="font-bold"
 			align="center"
 			style={{
+				backgroundColor: "bg-gray-900",
 				minWidth: colWidth || "auto",
 				whiteSpace: "nowrap",
 				cursor: "col-resize",
@@ -67,7 +68,9 @@ export const TableHeadCell: FunctionComponent<Props> = ({
 		>
 			<div
 				className="text-center"
-				ref={(el) => { colRefs.current[index] = el; }}
+				ref={(el) => {
+					colRefs.current[index] = el;
+				}}
 				style={{
 					position: "relative",
 					display: "inline-block",
