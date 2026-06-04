@@ -104,7 +104,7 @@ const mockData = {
 };
 
 export default function EnrollmentView() {
-	const [formation, setFormation] = useState("Diplomado");
+	const [education, setEducation] = useState("Diplomado");
 	const [offer, setOffer] = useState("");
 	const [studyMode, setStudyMode] = useState("");
 	const [academicCohort, setAcademicCohort] = useState("");
@@ -113,7 +113,7 @@ export default function EnrollmentView() {
 	const [paymentMethod, setPaymentMethod] = useState("");
 	const [paymentFormat, setPaymentFormat] = useState("");
 
-	const selected = mockData[formation as keyof typeof mockData];
+	const selected = mockData[education as keyof typeof mockData];
 
 	return (
 		<Box className="w-full max-w-6xl mx-auto p-4">
@@ -153,11 +153,11 @@ export default function EnrollmentView() {
 							<FormControl fullWidth size="small">
 								<InputLabel>Formación</InputLabel>
 								<Select
-									value={formation}
+									value={education}
 									label="Formación"
 									onChange={(e) => {
-										setFormation(e.target.value);
-										setOffer(""); // reset offer when formation changes
+										setEducation(e.target.value);
+										setOffer(""); // reset offer when education changes
 									}}
 								>
 									<MenuItem value="Diplomado">

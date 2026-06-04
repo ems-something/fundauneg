@@ -14,6 +14,7 @@ const routesWithoutHeader = [
 	"/home/editor",
 	"/home/registration",
 	"/home/invoices",
+	"/home/certification",
 ];
 
 export const metadata: Metadata = {
